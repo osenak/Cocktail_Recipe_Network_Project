@@ -49,7 +49,7 @@ nationality_to_country = {
 }
 
 
-# Mapping of nationality adjectives to corresponding states, provinces, and cities
+# ChatGPT generated: Mapping of nationality adjectives to corresponding states, provinces, and cities
 known_origins = {
     "The Savoy Cocktail Book": "London",
     "Jerry Thomas' Bartender's Guide": "New York",
@@ -183,7 +183,7 @@ nationality_to_region = {
     "aucklander": "Auckland", "wellingtonian": "Wellington"
 }
 
-# ChatGPT generated: Check for location keyword ("from" or similar)
+# ChatGPT generated: Check for location keywords
 origin_keywords = [
     "origin", "origins", "originated", "originating", "invented", "first made", "created",
     "inception", "first developed", "concocted", "first crafted", "first served", "first mixed",
@@ -215,6 +215,7 @@ prepositions_list = [
     "in", "from", "at", "near", "around", "by", "outside", "within",
     "in Northern", "in Southern", "in Western", "in Eastern"
 ]
+
 words_to_avoid = [
     "January", "February", "March", "April", "May", "June", 
     "July", "August", "September", "October", "November", "December"
@@ -227,7 +228,7 @@ nlp = spacy.load("en_core_web_sm")
 # Initialize geolocator
 geolocator = Nominatim(user_agent="cocktail_origin_lookup")
 
-# Your SerpAPI Key
+# Your SerpAPI Key - MAKE SURE TO MODIFY THIS EVERY TIME
 SERPAPI_KEY = "..."
 
 # Define output directory
@@ -251,9 +252,9 @@ search_api_queries_file = os.path.join(output_dir, "searchAPIQueries.json")
 # Initialize an empty list to store search queries and results
 search_queries = {}
 
-# Function to normalize cocktail name
+# ChatGPT generated: Function to normalize cocktail name
 def normalize_name(name):
-    # Removes special characters, trims spaces, and removes 'cocktail' from the end.
+    """Removes special characters, trims spaces, and removes 'cocktail' from the end."""
     # Remove text after '(' if present
     name = re.split(r'\(', name)[0]
     # Replace specific characters
@@ -297,7 +298,6 @@ def check_for_time(result, recipe_time_list):
         source = result.get("source", "Unknown").strip()
         recipe_time_list.append((source, time))
 
-# ChatGPT generated: Postal code detector
 # def is_postal_code(value):
 #     postal_code_patterns = [
 #         r"^\d{5,7}$",                      # Purely numeric (USA, India, etc.)
@@ -379,6 +379,7 @@ def extract_location_by_keyword(allFieldsData):
     preposition_pattern = "|".join(re.escape(p) for p in prepositions_list)
 
     # Regex: find any capitalized phrase that comes after a listed preposition
+    # This allows multiple capitalized tokens (e.g., "New Orleans", "San Francisco")
     capitalized_after_prep_pattern = rf"(?:\b(?:{preposition_pattern})\b\s+)((?:[A-Z][a-zA-Z'-]*\s*)+)(?=[\.\?!]|$)"
 
     # Find all matches in the full text, allows for duplicates by keyword for increased chances
