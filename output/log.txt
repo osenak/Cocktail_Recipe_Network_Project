@@ -1,0 +1,3 @@
+2025-04-01 05:46:38,087 - Progress saved to output6.2.2/cocktails_recipe_with_origin_and_rating.csv
+2025-04-01 05:46:41,983 - Progress saved to output6.2.2/cocktails_recipe_with_origin_and_rating.csv
+2025-04-01 05:46:41,986 - SerpAPI query results saved as output6.2.2/serpApiQueries.json
