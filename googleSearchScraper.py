@@ -27,8 +27,12 @@ class TeeLogger:
         self.file.flush()
 
 
-# Mapping of nationality adjectives to corresponding countries
+# ChatGPT generated: Mapping of nationality adjectives to corresponding countries
 nationality_to_country = {
+    # Continental adj for later inspection (dont want to miss them)
+    "european": "Europe", "asian": "Asia", "african": "Africa", "north american": "North America", "south american": "South American",
+
+    # country
     "brazilian": "Brazil", "mexican": "Mexico", "american": "United States",
     "canadian": "Canada", "argentinian": "Argentina", "peruvian": "Peru",
     "chilean": "Chile", "colombian": "Colombia", "cuban": "Cuba",
@@ -43,6 +47,29 @@ nationality_to_country = {
     "moroccan": "Morocco", "south african": "South Africa", "egyptian": "Egypt",
     "australian": "Australia", "new zealand": "New Zealand"
 }
+
+
+# Mapping of nationality adjectives to corresponding states, provinces, and cities
+known_origins = {
+    "The Savoy Cocktail Book": "London",
+    "Jerry Thomas' Bartender's Guide": "New York",
+    "The Art of Mixology": "New York",
+    "The PDT Cocktail Book": "New York",
+    "Imbibe!": "New York",
+    "The Modern Cocktail": "San Francisco",
+    "The Joy of Mixology": "New York",
+    "Death & Co: Modern Classic Cocktails": "New York",
+    "The Cocktail Lab: Unraveling the Mysteries of Flavor and Balance": "Los Angeles",
+    "The New York Bartender's Guide": "New York",
+    "The Bar Book: Elements of Cocktail Technique": "Portland",
+    "The Craft of the Cocktail": "New York",
+    "A Spot at the Bar: Welcome to the Everleigh": "Chicago",
+    "The Drinking Man's Diet": "New York",
+    "Whiskey: The Definitive World Guide": "London",
+    "Smuggler's Cove: Exotic Cocktails, Rum, and the Cult of Tiki": "San Francisco",
+    "The Tiki Book": "London"
+}
+
 
 # ChatGPT generated: Mapping of nationality adjectives to corresponding states, provinces, and cities
 nationality_to_region = {
@@ -156,6 +183,43 @@ nationality_to_region = {
     "aucklander": "Auckland", "wellingtonian": "Wellington"
 }
 
+# ChatGPT generated: Check for location keyword ("from" or similar)
+origin_keywords = [
+    "origin", "origins", "originated", "originating", "invented", "first made", "created",
+    "inception", "first developed", "concocted", "first crafted", "first served", "first mixed",
+    "first appeared", "first produced", "first documented", "discovered", "popularized", "first brewed",
+    "first appears", "first appearance", "originates", "inventing", "developing", "producing", "formulating",
+    "popularizing", "devising", "devised", "formulated", "crafted", "established", "history", "first distilled",
+    "first prepared", "first sold", "manufactured", "product", "produced", "pioneered", "credited"
+]
+prepositions_list = [
+    # Specific place types
+    "hotel in", "club in", "cafe in", "bar in", "lounge in", "tavern in", "saloon in",
+    "restaurant in", "restaurant at", "establishment in", "diner in", "pub in",
+    "inn in", "bistro in", "speakeasy in",
+
+    # Administrative divisions
+    "state of", "city of", "town of", "village of", "province of", "region of", 
+    "district of", "county of", "municipality of", "territory of",
+
+    # Geographical/abstract regional terms
+    "area of", "zone of", "corner of", "part of", "heart of", "outskirts of",
+    "center of", "centre of", "capital of", "suburbs of", "metropolitan area of", "borough of"
+    "county of", "canton of", "commune of", "municipality of", "ward of", "subdivision of",
+
+    # Physical geography
+    "island of", "coast of", "coastal", "valley of", "mountains of", "desert of",
+    "north of", "south of", "east of", "west of",
+
+    # General location prepositions, adds a count by allowing duplicate = increased likeliness
+    "in", "from", "at", "near", "around", "by", "outside", "within",
+    "in Northern", "in Southern", "in Western", "in Eastern"
+]
+words_to_avoid = [
+    "January", "February", "March", "April", "May", "June", 
+    "July", "August", "September", "October", "November", "December"
+]
+
 
 # Load spaCy NLP model
 nlp = spacy.load("en_core_web_sm")
@@ -163,7 +227,7 @@ nlp = spacy.load("en_core_web_sm")
 # Initialize geolocator
 geolocator = Nominatim(user_agent="cocktail_origin_lookup")
 
-# Your SerpAPI Key - MAKE SURE TO MODIFY THIS EVERY TIME
+# Your SerpAPI Key
 SERPAPI_KEY = "..."
 
 # Define output directory
@@ -190,6 +254,11 @@ search_queries = {}
 # Function to normalize cocktail name
 def normalize_name(name):
     # Removes special characters, trims spaces, and removes 'cocktail' from the end.
+    # Remove text after '(' if present
+    name = re.split(r'\(', name)[0]
+    # Replace specific characters
+    name = name.replace('&', ' and ')
+    name = name.replace('\\', ' or ')
     name = re.sub(r' no\.\b', ' no ', name, flags=re.IGNORECASE)
 
     # Normalize accented characters to their decomposed form
@@ -228,50 +297,43 @@ def check_for_time(result, recipe_time_list):
         source = result.get("source", "Unknown").strip()
         recipe_time_list.append((source, time))
 
+# ChatGPT generated: Postal code detector
+# def is_postal_code(value):
+#     postal_code_patterns = [
+#         r"^\d{5,7}$",                      # Purely numeric (USA, India, etc.)
+#         r"^\d{5}-\d{4}$",                  # ZIP+4 (USA)
+#         r"^[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d$",  # Canada (e.g., K1A 0B1)
+#         r"^[A-Za-z]{1,2}\d[A-Za-z\d]?\s?\d[A-Za-z]{2}$",  # UK
+#     ]
+#     for pattern in postal_code_patterns:
+#         if re.match(pattern, value):
+#             return True
+#     return False
+
 # Function to resolve location with Geopy
 def resolve_location(location):
     """Uses Geopy to resolve the location to a state and country."""
     try:
-    #   # Try to resolve the location by splitting into multiple possible parts
-    #   location_obj = geolocator.geocode(location.split()[0])
-    #   print(f"here1: {location_obj}")
-    #   if location_obj:
-    #     address = location_obj.raw.get('address', {})
-    #     state = address.get('state', "Unknown")  # Correct way to extract state
-    #     country = address.get('country', "Unknown")  # Correct way to extract country
-        
-    #     print(f"Resolved location2: State: {state}, Country: {country}")
-    #     return state, country
-    # except Exception as e:
-    #   print(f"Geopy 1st-level error for {location}: {e}")
 
-    # try:
-    #   # just in case there's an error in first try, try with two words
-    #   location_obj = geolocator.geocode(' '.join(location.split()[:2]))
-    #   print(location_obj.raw)
-    #   if location_obj:
-    #     address = location_obj.raw.get('address', {})
-    #     state = address.get('state', "Unknown")  # Correct way to extract state
-    #     country = address.get('country', "Unknown")  # Correct way to extract country
-        
-    #     print(f"Resolved location2: State: {state}, Country: {country}")
-    #     return state, country
-
-        location_obj = geolocator.geocode(location, exactly_one=True, timeout=10)
+        location_obj = geolocator.geocode(location, exactly_one=True, timeout=10, language="en")
         if location_obj:
-            print(f"Full Address: {location_obj.address}")  
+            print(f"Full Address: {location_obj.address}")  # Debugging info
             # Split address by commas and strip spaces
             address_parts = [part.strip() for part in location_obj.address.split(",")]
 
             state, country = "Unknown", "Unknown"
-            # Manually get state (second to last item) and country (last item) instead of nlp
+            # Get state (second to last item) and country (last item)
             if len(address_parts) >= 2:
-                state = address_parts[-2]  # Second to last item
-                country = address_parts[-1]  # Last item
-            elif len(address_parts) == 1:
-                country = address_parts[-1]  # Last item
+                # Check if potential_state is a postal code
+                if re.search(r"\d", address_parts[-2]) and len(address_parts) >= 3:
+                    state = address_parts[-3]  # Use the value before the postal code
+                else:
+                    state = address_parts[-2]
 
-            print(f"Resolved location: State: {state}, Country: {country}")  
+            if len(address_parts) >= 1:
+                country = address_parts[-1]
+
+            print(f"Resolved location: State: {state}, Country: {country}")  # Debugging info
             return state, country
         else:
             return "Unknown", "Unknown"
@@ -281,161 +343,145 @@ def resolve_location(location):
     except Exception as e:
         print(f"Geopy error for {location}: {e}")
         return "Unknown", "Unknown"
-    
-
-# Function to extract location from search results
-def extract_location_by_keyword_postfix(allFieldsData):
-
-    detection_locations_postfix = []
-
-    # Check for location keyword ("from" or similar)
-    location_keywords = ["origin", "originated", "originating", "invented", "first made", "created", "first appeared", "popularized", "produced", "product"]
-    prepositions_list = [
-        "hotel in", "club in", "cafe in", "bar in", "state of", "city of", "town of", "province of", 
-        "restaurant in", "restaurant at", "establishment in", "island of", "in", "from", "at"
-    ]
-    words_to_avoid = [
-        "January", "February", "March", "April", "May", "June", 
-        "July", "August", "September", "October", "November", "December"
-    ]
-    # Create regex pattern for all prepositions
-    location_keywords_pattern = "|".join(re.escape(k) for k in location_keywords)
-    preposition_pattern = "|".join(re.escape(p) for p in prepositions_list)
-
-    foundKeyword = False
-    allFieldsDataLower = allFieldsData.lower()
-
-    # Regex to find capitalized substrings after location-related keywords or prepositions
-    capitalized_pattern = (
-        r"(?:\b(" + location_keywords_pattern + r")\b\s+.*?\b(" + preposition_pattern + r")\s+)"
-        r"([A-Z][a-z]+(?:\s+[A-Z][a-z']*)*)(?=[^.]*\.)"
-    )
-
-    for keyword in location_keywords:
-        #print(f"1 {keyword}")
-        if keyword in allFieldsDataLower:
-            
-            foundKeyword = True
-            # Updated regex to capture multiple capitalized sets after prepositions
-            matches = re.findall(capitalized_pattern, allFieldsData)
-            #print(f"M: {matches}")
-            if matches:
-                # Filter out matches that are in words_to_avoid
-                for match in matches:
-                    location = match[2]
-                    if location not in words_to_avoid:
-                        detection_locations_postfix.append(location)
-                        print(f"Found locations postfix: {detection_locations_postfix}")
-
-    #print(f"{detection_locations_postfix}")
-    # If no location keyword found, check for prepositions and capture all capitalized words
-    if not foundKeyword:
-        preposition_capitalized_pattern = (
-            r"(?:\b(" + preposition_pattern + r")\s+)"
-            r"([A-Z][a-z]+(?:\s+[A-Z][a-z']*)*)(?=[^.]*\.)"
-        )
-        matches = re.findall(preposition_capitalized_pattern, allFieldsData)
-        if matches:
-            # Filter out matches that are in words_to_avoid
-            for match in matches:
-                location = match[2]
-                if location not in words_to_avoid:
-                    detection_locations_postfix.append(location)
-                    print(f"Found locations postfix: {detection_locations_postfix}")
-
-    print(f"Detected possible locations (postfix): {detection_locations_postfix}")
-    # Resolve locations using geopy (or your resolve_location function)
-    found_country = "Unknown"
-    for location in detection_locations_postfix:
-        state, country = resolve_location(location)
-        print(f"Resolved location: {state}, {country} for {location}")
-        if country != "Unknown":
-            if state != "Unknown":
-                return state, country
-            else:
-                country = found_country
-
-    # Fallback if no location was found, return Unknown
-    return "Unknown", found_country
 
 
 def extract_location_by_adj(allFieldsData):
     # Convert to lowercase for easier searching (but keep original for regex)
     allFieldsDataLower = allFieldsData.lower()
-
-    # # Join all adjectives into regex patterns
-    # state_adj_pattern = "|".join(re.escape(adj) for adj in nationality_to_region.keys())
-    # country_adj_pattern = "|".join(re.escape(adj) for adj in nationality_to_country.keys())
-    
-    # # Match capitalized words before an adjective
-    # match = re.search(rf"([A-Z][a-zA-Z\s.]*?)\s+(?=\b(?:{state_adj_pattern}|{country_adj_pattern})\b)", allFieldsData)
-
-    # if match:
-    #     detected_location = match.group(1).strip()
-    #     print(f"Found location before adjective: {detected_location}")
-
-    #     # Resolve using the appropriate dictionary
-    #     if detected_location in nationality_to_region.values():
-    #         state, country = resolve_location(detected_location)
-    #         return state, country
-    #     elif detected_location in nationality_to_country.values():
-    #         return "Unknown", detected_location  # Use country without state info
-
-    # # Fallback if no location was found
-    # return "Unknown", "Unknown"
+    locations_found = []
 
     # Check for states adjectives
     for adj, state in nationality_to_region.items():
         # if any(f"{adj} {word}" in allFieldsDataLower for word in ["cocktail", "drink", "concoction", "beverage", "bar", "club", "restaurant", "cafe", "establishment", "bartender"]):
         if adj in allFieldsDataLower:
             print(f"Found nationality adjective '{adj}' → Assigning state: {state}")
-            state, country = resolve_location(state)
-            return state, country  # Use country directly without state info
+            location = resolve_location(state)
+            locations_found.append(location)
 
     # Check for nationality adjectives (e.g., "Brazilian", "Mexican")
     for adj, country in nationality_to_country.items():
         # if any(f"{adj} {word}" in allFieldsData for word in ["cocktail", "drink", "concoction", "beverage", "bar", "club", "restaurant", "cafe", "establishment", "bartender"]):
         if adj in allFieldsDataLower:
             print(f"Found nationality adjective '{adj}' → Assigning country: {country}")
-            return "Unknown", country  # Use country directly without state info
+            locations_found.append(("Unknown", country))  # Use country directly without state info
 
     # Fallback if no location was found, return Unknown
-    return "Unknown", "Unknown"
+    return locations_found
 
 
 # Function to extract location from search results
-def extract_location_by_keyword_prefix(allFieldsData):
-
-    detection_location_prefix = None
+def extract_location_by_keyword(allFieldsData):
     allFieldsDataLower = allFieldsData.lower()
+    detected_possible_locations = []
+    state, country = ("Unknown", "Unknown")
 
-    # Check for location keyword ("from" or similar)
-    location_keywords = ["origin", "originated", "invented", "first made", "created", "first appeared", "popularized", "produced", "product"]
-    prepositions_list = ["in", "from", "of"]
-
-    # Create regex pattern for all prepositions and keywords
+    # Create regex pattern for all prepositions
     preposition_pattern = "|".join(re.escape(p) for p in prepositions_list)
-    keyword_pattern = "|".join(re.escape(k) for k in location_keywords)
 
-    # Regex to find a location between a preposition and a keyword
-    match = re.search(
-        rf"(?:{preposition_pattern})\s+([A-Z][a-zA-Z\s]*?\b)(?=\s+\b(?:{keyword_pattern})\b)", 
-        allFieldsData
-    )
+    # Regex: find any capitalized phrase that comes after a listed preposition
+    capitalized_after_prep_pattern = rf"(?:\b(?:{preposition_pattern})\b\s+)((?:[A-Z][a-zA-Z'-]*\s*)+)(?=[\.\?!]|$)"
 
-    if match:
-        detection_location_prefix = match.group(1).strip()
-        print(f"Found location prefix: {detection_location_prefix}")
+    # Find all matches in the full text, allows for duplicates by keyword for increased chances
+    matches = re.findall(capitalized_after_prep_pattern, allFieldsData)
 
-    if detection_location_prefix:
-        state, country = resolve_location(detection_location_prefix)
-        print(f"Resolved location: State: {state}, Country: {country}")
+    # Deduplicate and filter
+    for match in matches:
+        location = match.strip()
+        # Remove possessive suffix if present
+        if "'s" in location:
+            parts = [p.strip() for p in location.split("'s") if p.strip()]
+            for p in parts:
+                if p and p not in words_to_avoid:
+                    detected_possible_locations.append(p)
+        else:
+            if location and location not in words_to_avoid:
+                detected_possible_locations.append(location)
+
+    print(f"Detected possible locations by keyword: {detected_possible_locations}")
+    
+    # Resolve locations using geopy (or your resolve_location function)
+    locations_found = []
+    for location in detected_possible_locations:
+        if location in words_to_avoid:
+            continue
+        found = False
+
+        # Check for states adjectives
+        for adj, state in nationality_to_region.items():
+            # if any(f"{adj} {word}" in allFieldsDataLower for word in ["cocktail", "drink", "concoction", "beverage", "bar", "club", "restaurant", "cafe", "establishment", "bartender"]):
+            if adj == location:
+                # to not risk geopy resolving weird locations
+                continue
+
+        # Check for nationality adjectives (e.g., "Brazilian", "Mexican")
+        for adj, country in nationality_to_country.items():
+            # if any(f"{adj} {word}" in allFieldsData for word in ["cocktail", "drink", "concoction", "beverage", "bar", "club", "restaurant", "cafe", "establishment", "bartender"]):
+            if adj == location:
+                # to not risk geopy resolving weird locations
+                continue
+
+        for source, origin in known_origins.items():
+            if source == location:
+                state = origin
+        
+        state, country = resolve_location(location)
         if country != "Unknown":
-            print(f"Detected location before '{location_keywords[0]}': {detection_location_prefix} → State: {state}, Country: {country}")
-        return state, country
-    # Fallback if no location was found, return Unknown
-    return "Unknown", "Unknown"
+            print(f"Resolved location by geopy: {state}, {country} for {location}")
+            locations_found.append((state, country))
 
+    return locations_found
+
+
+def add_to_pool(location, other_locations_found, priority_scale):
+    
+    state, country = location
+    if state != "Unknown":
+        #if best_effort_origin_by_prefix == ("", "") or best_effort_origin_by_prefix[0] == "Unknown":
+        if not any(s == state for _, s, _ in other_locations_found): # if state not in pool yet
+            if not any(c == country for _, c, _ in other_locations_found): # if country not in pool yet
+                other_locations_found.append((state, country, priority_scale))
+            else: # if country in pool with some state
+                for i in range(len(other_locations_found)):
+                    if other_locations_found[i][1] == country:
+                        if other_locations_found[i][0] == "Unknown": # if state unknown
+                            s, c, count = other_locations_found[i]
+                            other_locations_found[i] = (state, c, count + priority_scale) # FIFO match state
+                        else: # if some other state
+                            s, c, count = other_locations_found[i]
+                            other_locations_found[i] = (s, c, count + priority_scale) # add priority count
+        else: # if state in pool already
+            for i in range(len(other_locations_found)):
+                if other_locations_found[i][0] == state and other_locations_found[i][1] == country:
+                    s, c, count = other_locations_found[i]
+                    other_locations_found[i] = (s, c, count + priority_scale) # add priority count
+    elif country != "Unknown": # if unknown state but not unknown country
+        if not any(c == country for _, c, _ in other_locations_found): # if country not pool
+            other_locations_found.append((state, country, priority_scale))
+        else: # if country in pool already
+            for i in range(len(other_locations_found)):
+                if other_locations_found[i][1] == country:
+                    s, c, count = other_locations_found[i]
+                    other_locations_found[i] = (s, c, count + priority_scale) # add a count to every state-country values
+    print(f"Locations found at this point: {other_locations_found}")
+
+def get_best_state_from_pool(country, other_locations_found):
+    
+    if any(c == country for _, c, _ in other_locations_found):
+        best_origin_match = ("Unknown", country)
+        next_best_origin_match = ("Unknown", country)
+        best_state_match_count = 0
+        for i in range(len(other_locations_found)):
+            if other_locations_found[i][1] == country:
+                s, c, count = other_locations_found[i]
+                if count > best_state_match_count:
+                    next_best_origin_match = best_origin_match
+                    best_origin_match = (s, c)
+                    best_state_match_count = count
+        if best_origin_match[0] == "Unknown" and next_best_origin_match[0] != "Unknown":
+            best_origin_match = next_best_origin_match
+        return best_origin_match
+    else: # if country not in pool
+        return "Unknown", country
 
 # Function to fetch search results from Google using SerpAPI
 def search_google(title):
@@ -489,215 +535,97 @@ def search_google(title):
                 seen_links.add(link)  # Mark this link as processed
                 source = result.get("source", "").lower()
 
-
-        best_effort_origin_by_postfix = ("","")
-        best_effort_origin_by_adj = ("","")
-        best_effort_origin_by_prefix = ("","")
-        prioritized_country_by_postfix = ""
-        prioritized_country_by_adj = ""
-        prioritized_country_by_prefix = ""
         other_locations_found = []
 
         for result in results:
             source = result.get("source", "").lower()
             link = result.get("link", "").lower()
             #print(f"------------Title: {title}, Source: {source}")
-            print(f"\nProcessing search result: {source} at {link}")
+            print(f"\n------------- Processing search result: {source} at {link}")
             
             check_for_rating(result, ratings_list)
+            
             check_for_time(result, recipe_time_list)
 
             """Extracts location from all fields in the search result."""
-            allFieldsData = " ".join(str(value) for key, value in result.items() if isinstance(value, str))
+            allFieldsData = f"{result.get('title', '')} {result.get('snippet', '')} {result.get('snippet_highlighted_words', '')}"
             allFieldsDataLower = allFieldsData.lower()
-
+            
             # Skip this result if neither "title" nor "title_normalized" exists in any field
             if title.lower() not in allFieldsDataLower and title_normalized.lower() not in allFieldsDataLower:
-                continue  # Skip this result and move to the next one
+              print(f"Skipped: No mention of {title} nor {title_normalized} in text.")
+              continue  # Skip this result and move to the next one
             
-            state, country = extract_location_by_keyword_postfix(allFieldsData)
-            
+            found_keywords = [keyword for keyword in origin_keywords if keyword in allFieldsDataLower]
+            print(f"Found keywords {found_keywords}")
+
             if result.get("source") == "Difford's Guide":
-                if state != "Unknown":
-                    # print(f"Best effort origin selected by Difford keyword for {title}: State: {state}, Country: {country}")
-                    # return state, country
-                    prioritized_country_by_postfix = country
-                    best_effort_origin_by_postfix = (state, country)
-                elif country != "Unknown" and best_effort_origin_by_postfix[1] != country: # case: "Unknown", !country
-                    prioritized_country_by_postfix = country
-                    best_effort_origin_by_postfix = (state, country)
+                if found_keywords:
+                    locations_found = extract_location_by_keyword(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found Difford location by keyword {found_keywords}: {p}")
+                        add_to_pool(p, other_locations_found, 4)
+                else:
+                    locations_found = extract_location_by_adj(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found Difford location by adjective: {p}")
+                        add_to_pool(p, other_locations_found, 3)
 
-                state, country = extract_location_by_adj(allFieldsData)
-                #print(f"{title}-{source} called extract_location_by_adj, result: {state}, {country}")
-                if country != "Unknown":
-                    prioritized_country_by_adj = country
-                    if best_effort_origin_by_adj[1] != country: 
-                        best_effort_origin_by_adj = (state, country)
-
-                state, country = extract_location_by_keyword_prefix(allFieldsData)
-                
-                if country != "Unknown":
-                    prioritized_country_by_prefix = country
-                    if best_effort_origin_by_prefix[1] != country:
-                        best_effort_origin_by_prefix = (state, country)
-                    elif best_effort_origin_by_prefix[0] == "Unknown" and state != "Unknown":
-                        best_effort_origin_by_prefix = (state, country)
-
-                    if state != "Unknown":
-                        if best_effort_origin_by_postfix == ("Unknown", country):
-                            best_effort_origin_by_postfix = (state, country)
-                        if best_effort_origin_by_adj == ("Unknown", country):
-                            best_effort_origin_by_adj = (state, country)
+                    locations_found = extract_location_by_keyword(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found Difford location by preposition: {p}")
+                        add_to_pool(p, other_locations_found, 3)
 
             elif result.get("source") == "Wikipedia":
-                if state != "Unknown":  # If state is known
-                    if prioritized_country_by_postfix == "":  # If no prioritized country yet
-                        best_effort_origin_by_postfix = (state, country)  # Overwrite it
-                    elif country == prioritized_country_by_postfix and best_effort_origin_by_postfix == ("Unknown", country):
-                        # print(f"Best effort origin selected by Wikipedia keyword for {title}: State: {state}, Country: {country}")
-                        # return state, country  # if found perfect match with diffords country
-                        best_effort_origin_by_postfix = (state, country)
-                elif best_effort_origin_by_postfix != ("Unknown", country) and country != "Unknown":  # If state is unknown but we have a better country match
-                    if prioritized_country_by_postfix == "":  
-                        best_effort_origin_by_postfix = (state, country)  # Overwrite it
+                if found_keywords:
+                    for p in locations_found:
+                        print(f"Found Wikipedia location by keyword {found_keywords}: {p}")
+                        add_to_pool(p, other_locations_found, 3)
+                else:
+                    locations_found = extract_location_by_adj(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found Wikipedia location by adjective: {p}")
+                        add_to_pool(p, other_locations_found, 2)
 
-                state, country = extract_location_by_adj(allFieldsData)
-                if country != "Unknown":
-                    if prioritized_country_by_adj == "" and best_effort_origin_by_adj[1] != country:
-                        best_effort_origin_by_adj = (state, country) # overwrite
+                    locations_found = extract_location_by_keyword(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found Wikipedia location by preposition: {p}")
+                        add_to_pool(p, other_locations_found, 2)
 
-                state, country = extract_location_by_keyword_prefix(allFieldsData)
-                #print(f"{title}-{source} called extract_location_by_adj, result: {state}, {country}")
-                if state != "Unknown":
-                    if prioritized_country_by_prefix == "":
-                        if best_effort_origin_by_prefix[1] != country or best_effort_origin_by_prefix[0] == "Unknown":
-                            best_effort_origin_by_prefix = (state, country)
-                    elif country == prioritized_country_by_prefix and best_effort_origin_by_postfix == ("Unknown", country):
-                        best_effort_origin_by_prefix = (state, country)
-
-                    if best_effort_origin_by_postfix == ("Unknown", country):
-                        best_effort_origin_by_postfix = (state, country)
-                    if best_effort_origin_by_adj == ("Unknown", country):
-                        best_effort_origin_by_adj = (state, country)
-                elif country != "Unknown":
-                    if prioritized_country_by_prefix == "" and best_effort_origin_by_prefix[1] != country:
-                        best_effort_origin_by_prefix = (state, country)
             else:
-                #general_rating = ...
-                if state != "Unknown":  # If state is known
-                    if prioritized_country_by_postfix == "":  # If no prioritized country yet
-                        if best_effort_origin_by_postfix == ("", "") or best_effort_origin_by_postfix == ("Unknown", "Unknown") or best_effort_origin_by_postfix == ("Unknown", country):
-                            best_effort_origin_by_postfix = (state, country)  # fill if empty
-                    elif country == prioritized_country_by_postfix and best_effort_origin_by_postfix == ("Unknown", country):
-                        # print(f"Found best state match for Difford keyword result: {best_origin_match[0]}")
-                        # print(f"Best effort origin selected by Difford keyword for {title}: State: {best_origin_match[0]}, Country: {best_origin_match[1]}")
-                        # return state, country  # if found perfect match with diffords country
-                        best_effort_origin_by_postfix = (state, country)
-                elif country != "Unknown":
-                    if best_effort_origin_by_postfix == ("", "") or best_effort_origin_by_postfix == ("Unknown", "Unknown"):
-                        if prioritized_country_by_postfix == "":  
-                            best_effort_origin_by_postfix = (state, country)  # fill if empty
+                if found_keywords:
+                    locations_found = extract_location_by_keyword(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found general location by keyword {found_keywords}: {p}")
+                        add_to_pool(p, other_locations_found, 2)
+                else:
+                    locations_found = extract_location_by_adj(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found general location by adjective: {p}")
+                        add_to_pool(p, other_locations_found, 1)
+                    
+                    locations_found = extract_location_by_keyword(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found general location by preposition: {p}")
+                        add_to_pool(p, other_locations_found, 1)
 
-                state, country = extract_location_by_adj(allFieldsData)
-                #print(f"{title}-{source} called extract_location_by_adj, result: {state}, {country}")
-                if country != "Unknown":
-                    if best_effort_origin_by_adj == ("", "") or best_effort_origin_by_adj == ("Unknown", "Unknown"): 
-                      best_effort_origin_by_adj = (state, country) # fill if empty
-                    elif state != "Unknown" and best_effort_origin_by_adj == ("Unknown", country):
-                      best_effort_origin_by_adj = (state, country) # overwrite
-
-                state, country = extract_location_by_keyword_prefix(allFieldsData)
-                if state != "Unknown":
-                    if best_effort_origin_by_prefix == ("", "") or best_effort_origin_by_prefix[0] == "Unknown":
-                        if not any(s == state for _, s, _ in other_locations_found):
-                            if not any(c == country for _, c, _ in other_locations_found):
-                                other_locations_found.append(state, country, 1)
-                            else: # if country in pool with Unknown state
-                                for i in range(len(other_locations_found)):
-                                    if other_locations_found[i][1] == country and other_locations_found[i][0] == "Unknown":
-                                        s, c, count = other_locations_found[i]
-                                        other_locations_found[i] = (state, c, count + 1) # FIFO match state
-                        else: # if state in pool already
-                            for i in range(len(other_locations_found)):
-                                if other_locations_found[i][0] == state and other_locations_found[i][1] == country:
-                                    s, c, count = other_locations_found[i]
-                                    other_locations_found[i] = (s, c, count + 1)
-                elif country != "Unknown":
-                    if best_effort_origin_by_prefix == ("", "") or best_effort_origin_by_prefix[0] == "Unknown":
-                        if not any(c == country for _, c, _ in other_locations_found):
-                            other_locations_found.append(state, country, 1)
-                        else: # if country in pool already
-                            for i in range(len(other_locations_found)):
-                                if other_locations_found[i][1] == country:
-                                    s, c, count = other_locations_found[i]
-                                    other_locations_found[i] = (s, c, count + 1) # add a count to every state-country values
-
-        print(f"best_effort_origin_by_postfix: {best_effort_origin_by_postfix}")
-        print(f"best_effort_origin_by_adj: {best_effort_origin_by_adj}")
-        print(f"best_effort_origin_by_prefix: {best_effort_origin_by_prefix}")
-        print(f"prioritized_country_by_postfix: {prioritized_country_by_postfix}")
-        print(f"prioritized_country_by_adj: {prioritized_country_by_adj}")
-        print(f"best_effort_origin_by_prefix: {best_effort_origin_by_prefix}")
-        print(f"other_locations_found: {other_locations_found}")
-
-        if best_effort_origin_by_postfix != ("", ""):
-            if best_effort_origin_by_postfix[0] == "Unknown":
-                if any(country == best_effort_origin_by_postfix[1] for _, country, _ in other_locations_found):
-                    best_origin_match = ("", "")
-                    best_state_match_count = 0
-                    for i in range(len(other_locations_found)):
-                        if other_locations_found[i][1] == best_effort_origin_by_postfix[1]:
-                            s, c, count = other_locations_found[i]
-                            if count > best_state_match_count:
-                                best_origin_match = (s, c)
-                    # Print final Origin values
-                    print(f"Found best state match: {best_origin_match[0]}")
-                    print(f"Best effort origin selected by keyword for {title}: State: {best_origin_match[0]}, Country: {best_origin_match[1]}")
-                    return best_origin_match, ratings_list, recipe_time_list
-            print(f"Best effort origin selected by keyword for {title}: State: {best_effort_origin_by_postfix[0]}, Country: {best_effort_origin_by_postfix[1]}")
-            return best_effort_origin_by_postfix, ratings_list, recipe_time_list
-        elif best_effort_origin_by_adj != ("", ""):
-            if best_effort_origin_by_adj[0] == "Unknown":
-                if any(country == best_effort_origin_by_adj[1] for _, country, _ in other_locations_found):
-                    best_origin_match = ("", "")
-                    best_state_match_count = 0
-                    for i in range(len(other_locations_found)):
-                        if other_locations_found[i][1] == best_effort_origin_by_adj[1]:
-                            s, c, count = other_locations_found[i]
-                            if count > best_state_match_count:
-                                best_origin_match = (s, c)
-                    # Print final Origin values
-                    print(f"Found best state match: {best_origin_match[0]}")
-                    print(f"Best effort origin selected by adjective for {title}: State: {best_origin_match[0]}, Country: {best_origin_match[1]}")
-                    return best_origin_match, ratings_list, recipe_time_list
-            print(f"Best effort origin selected by adjective for {title}: State: {best_effort_origin_by_adj[0]}, Country: {best_effort_origin_by_adj[1]}")
-            return best_effort_origin_by_adj, ratings_list, recipe_time_list
-        elif best_effort_origin_by_prefix != ("", ""):
-            if best_effort_origin_by_prefix[0] == "Unknown":
-                if any(country == best_effort_origin_by_prefix[1] for _, country, _ in other_locations_found):
-                    best_origin_match = ("", "")
-                    best_state_match_count = 0
-                    for i in range(len(other_locations_found)):
-                        if other_locations_found[i][1] == best_effort_origin_by_prefix[1]:
-                            s, c, count = other_locations_found[i]
-                            if count > best_state_match_count:
-                                best_origin_match = (s, c)
-                    print(f"Found best state match: {best_origin_match[0]}")
-                    print(f"Best effort origin selected by polling for {title}: State: {best_origin_match[0]}, Country: {best_origin_match[1]}")
-                    return best_origin_match, ratings_list, recipe_time_list
-            print(f"Best effort origin selected by polling for {title}: State: {best_effort_origin_by_prefix[0]}, Country: {best_effort_origin_by_prefix[1]}")
-            return best_effort_origin_by_prefix, ratings_list, recipe_time_list
-        elif other_locations_found:
-            best_origin_match = ("", "")
+        if other_locations_found:
+            best_origin_match = ("Unknown", "Unknown")
+            next_best_origin_match = ("Unknown", "Unknown")
             best_state_match_count = 0
             for i in range(len(other_locations_found)):
-                if other_locations_found[i][3] > best_state_match_count:
+                s, c, count = other_locations_found[i]
+                if count > best_state_match_count:
+                    next_best_origin_match = best_origin_match
                     best_origin_match = (s, c)
-            print(f"Best effort origin selected by polling for {title}: State: {best_origin_match[0]}, Country: {best_origin_match[1]}")
+                    best_state_match_count = count
+            if best_origin_match[0] == "Unknown" and next_best_origin_match[0] != "Unknown":
+                best_origin_match = next_best_origin_match
+            print(f"Best effort origin selected by polling for {title}: State: {best_origin_match[0]}, Country: {best_origin_match[1]}\n")
             return best_origin_match, ratings_list, recipe_time_list
-        else:
-            print("No origin location found")
-            return ("Unknown", "Unknown"), ratings_list, recipe_time_list
+      
+        print("No origin location found.\n")
+        return ("Unknown", "Unknown"), ratings_list, recipe_time_list
 
     except Exception as e:
         print(f"Error in querying at {title}: {e}")
@@ -711,7 +639,7 @@ def get_cocktail_info(title):
     return origin
 
 # Load the CSV file
-csv_file = "cocktails_recipe_CLEAN_SAMPLE.csv"
+csv_file = "cocktails_recipe_CLEAN.csv"
 df = pd.read_csv(csv_file)
 
 # Ensure columns for Origin State, Origin Country, and Rating are created
@@ -731,7 +659,7 @@ for idx, title in tqdm(
     file=sys.__stderr__,  # Ensure tqdm writes to the original stderr
 ):
     try:
-        print(f"\n>>> Searching for {title}...")
+        print(f"\n>>>>>>>>>>>>>>>>>>>>>>>>>>> Searching for {title} <<<<<<<<<<<<<<<<<<<<<<<<<<<")
         (state, country), ratings_list, recipe_time_list = get_cocktail_info(title)
 
         #print(f"Resolved location: State: {state}, Country: {country}")
@@ -761,13 +689,14 @@ for idx, title in tqdm(
         # Format the rating sources as a comma-separated string
         recipe_sources = ", ".join(source for source, _ in recipe_time_list)
         df.at[idx, "Recipe Time Sources"] = recipe_sources
+        print("\n")
 
     except Exception as e:
-        print(f"Error in main at {title}: {e}")
+        print(f"Error in main at {title}: {e}\n")
         continue
 
 # Save final results
-output_csv = os.path.join(output_dir, "cocktail_origins.csv")
+output_csv = os.path.join(output_dir, "cocktail_additional_info.csv")
 print(f"Saving CSV to: {output_csv}")
 df.to_csv(output_csv, index=False)
 print("CSV save successful!")
