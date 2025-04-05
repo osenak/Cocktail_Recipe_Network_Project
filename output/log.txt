@@ -1,3 +1,6 @@
-2025-04-01 05:46:38,087 - Progress saved to output6.2.2/cocktails_recipe_with_origin_and_rating.csv
-2025-04-01 05:46:41,983 - Progress saved to output6.2.2/cocktails_recipe_with_origin_and_rating.csv
-2025-04-01 05:46:41,986 - SerpAPI query results saved as output6.2.2/serpApiQueries.json
+2025-04-01 09:32:31,500 - Progress saved to output9.4debug/cocktails_recipe_with_origin_and_rating.csv
+2025-04-01 09:34:20,551 - Progress saved to output9.4debug/cocktails_recipe_with_origin_and_rating.csv
+2025-04-01 09:34:20,567 - SerpAPI query results saved as output9.4debug/serpApiQueries.json
+2025-04-01 09:47:06,013 - Progress saved to output9.5/cocktails_recipe_with_origin_and_rating.csv
+2025-04-01 09:47:26,488 - Progress saved to output9.5/cocktails_recipe_with_origin_and_rating.csv
+2025-04-01 09:47:26,493 - SerpAPI query results saved as output9.5/serpApiQueries.json
