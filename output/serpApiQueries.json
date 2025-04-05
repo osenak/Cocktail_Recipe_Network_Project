@@ -1,0 +1,692 @@
+{
+    "Abacaxi Ricaço": [
+        {
+            "search_result": {
+                "search_metadata": {
+                    "id": "67ebd0a8cb053d1f79715f0e",
+                    "status": "Success",
+                    "json_endpoint": "https://serpapi.com/searches/e3b577475bd9d31f/67ebd0a8cb053d1f79715f0e.json",
+                    "created_at": "2025-04-01 11:40:24 UTC",
+                    "processed_at": "2025-04-01 11:40:24 UTC",
+                    "google_url": "https://www.google.com/search?q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&oq=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+                    "raw_html_file": "https://serpapi.com/searches/e3b577475bd9d31f/67ebd0a8cb053d1f79715f0e.html",
+                    "total_time_taken": 2.26
+                },
+                "search_parameters": {
+                    "engine": "google",
+                    "q": "Where did the Abacaxi Ricaço cocktail originate from",
+                    "google_domain": "google.com",
+                    "hl": "en",
+                    "gl": "us",
+                    "device": "desktop"
+                },
+                "search_information": {
+                    "query_displayed": "Where did the Abacaxi Ricaço cocktail originate from",
+                    "total_results": 29300,
+                    "time_taken_displayed": 0.2,
+                    "organic_results_state": "Results for exact spelling"
+                },
+                "knowledge_graph": {
+                    "entity_type": "related_questions"
+                },
+                "related_questions": [
+                    {
+                        "question": "Where did the cocktail come from?",
+                        "snippet": "Some claim that the phrase “cocktail” originated in New Orleans, where the creator of a well-known bitters by the name of Peychaud was known to serve a mixed brandy drink in a French egg cup called a 'coquetier. ' Over time, fans of the beverage would westernize the pronunciation, eventually landing on 'cocktail. '",
+                        "title": "The Surprising Origin of the Word 'Cocktail' | Angel's Envy US",
+                        "link": "https://www.angelsenvy.com/us/en/guide/whiskey-content/the-surprising-origin-of-the-word-cocktail/#:~:text=Some%20claim%20that%20the%20phrase,'",
+                        "displayed_link": "https://www.angelsenvy.com › guide › whiskey-content",
+                        "source_logo": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/eac4432c2ac840557b0cc7de1290c4e0549745936b1ff1bba4f6103ed7ad545e.png",
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIGNvY2t0YWlsIGNvbWUgZnJvbT8iLCJsayI6IkdpQjNhR1Z5WlNCa2FXUWdkR2hsSUdOdlkydDBZV2xzSUdOdmJXVWdabkp2YlEiLCJicyI6ImMtUHk0bElNejBndFNsVkl5VXhSS01sSVZVak9UODR1U2N6TUFUSnlVeFhTaXZKejdTVmUyUnNwU1NtVUUxREg1YzJsaFdwV1ZtbGVlazZxUWxKbVVZcENTbEZtWGpheW9RLTBqYVNrSkRDVjVCZGxwbWZtY2NWeGFhTWFsbEZhVkpTWm5KaUhaRFZFYVdKSnFyM0VRemtqSFNtdGNxSjFjUGx6NmFDYTcxeWFsS2pnazVsVWhOMkNEZkpHTWxKU3lTQkZPZGdVQ1RBQ0FBIiwiaWQiOiJmY19xZERyWl9ha09LbWtwdFFQOXR6enNRRV8xIn0=",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIGNvY2t0YWlsIGNvbWUgZnJvbT8iLCJsayI6IkdpQjNhR1Z5WlNCa2FXUWdkR2hsSUdOdlkydDBZV2xzSUdOdmJXVWdabkp2YlEiLCJicyI6ImMtUHk0bElNejBndFNsVkl5VXhSS01sSVZVak9UODR1U2N6TUFUSnlVeFhTaXZKejdTVmUyUnNwU1NtVUUxREg1YzJsaFdwV1ZtbGVlazZxUWxKbVVZcENTbEZtWGpheW9RLTBqYVNrSkRDVjVCZGxwbWZtY2NWeGFhTWFsbEZhVkpTWm5KaUhaRFZFYVdKSnFyM0VRemtqSFNtdGNxSjFjUGx6NmFDYTcxeWFsS2pnazVsVWhOMkNEZkpHTWxKU3lTQkZPZGdVQ1RBQ0FBIiwiaWQiOiJmY19xZERyWl9ha09LbWtwdFFQOXR6enNRRV8xIn0%3D"
+                    },
+                    {
+                        "question": "Where did the jungle bird drink come from?",
+                        "snippet": "The Jungle Bird was originally crafted by Jeffrey Ong, bartender at the Aviary bar in the Kuala Lumpur Hilton, in Malaysia, in the early 1970's. It was served as a welcome cocktail to guests, in a porcelain bird shaped tiki mug, with an elaborate pineapple garnish.",
+                        "title": "The Jungle Bird - Got Rum? Magazine",
+                        "date": "Sep 14, 2021",
+                        "link": "https://www.gotrum.com/editorials/bartenders-corner/the-jungle-bird_1/",
+                        "displayed_link": "https://www.gotrum.com › editorials › bartenders-corner",
+                        "source_logo": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/eac4432c2ac840557b0cc7de1290c4e0f22c918c5ec2d65089189bd7f09bff01.png",
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIGp1bmdsZSBiaXJkIGRyaW5rIGNvbWUgZnJvbT8iLCJsayI6IkdoaHFkVzVuYkdVZ1ltbHlaQ0JrY21sdWF5QnZjbWxuYVc0IiwiYnMiOiJjLVB5NGxJTXowZ3RTbFZJeVV4UktNbElWVWpPVDg0dVNjek1BVEp5VXhYU2l2Sno3U1ZlMlJzcFNTbVVFMURINWMybGhXcFdWbWxlZWs2cVFsSm1VWXBDU2xGbVhqYXlvUS0wamFTa0pEQ1Y1QmRscG1mbWNjVnhhYU1hbGxGYVZKU1puSmlIWkRWRWFXSkpxcjNFUXprakhTbXRjcUoxY1BsejZhQ2E3MXlhbEtqZ2s1bFVoTjJDRGZKR01sSlN5U0JGT2RnVUNUQUNBQSIsImlkIjoiZmNfcWREclpfYWtPS21rcHRRUDl0enpzUUVfMSJ9",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIGp1bmdsZSBiaXJkIGRyaW5rIGNvbWUgZnJvbT8iLCJsayI6IkdoaHFkVzVuYkdVZ1ltbHlaQ0JrY21sdWF5QnZjbWxuYVc0IiwiYnMiOiJjLVB5NGxJTXowZ3RTbFZJeVV4UktNbElWVWpPVDg0dVNjek1BVEp5VXhYU2l2Sno3U1ZlMlJzcFNTbVVFMURINWMybGhXcFdWbWxlZWs2cVFsSm1VWXBDU2xGbVhqYXlvUS0wamFTa0pEQ1Y1QmRscG1mbWNjVnhhYU1hbGxGYVZKU1puSmlIWkRWRWFXSkpxcjNFUXprakhTbXRjcUoxY1BsejZhQ2E3MXlhbEtqZ2s1bFVoTjJDRGZKR01sSlN5U0JGT2RnVUNUQUNBQSIsImlkIjoiZmNfcWREclpfYWtPS21rcHRRUDl0enpzUUVfMSJ9"
+                    },
+                    {
+                        "question": "Where did the hurricane cocktail originate?",
+                        "snippet": null,
+                        "title": "AI Overview",
+                        "link": "https://support.google.com/websearch?p=ai_overviews&hl=en",
+                        "list": [
+                            "Pat O'Brien's: The cocktail is most famously associated with Pat O'Brien's bar, a legendary establishment in the heart of New Orleans' French Quarter.  ",
+                            "1940s: The Hurricane's creation is linked to the 1940s, a time when whiskey was scarce during World War II, but rum was readily available.  ",
+                            "Rum Surplus: Bar owners, like Pat O'Brien, were forced to buy large quantities of rum to obtain other spirits, leading to a surplus that needed to be used creatively.  ",
+                            "The Drink's Creation: Pat O'Brien's bar staff experimented with rum cocktails, eventually developing the recipe for the Hurricane, a sweet and fruity drink served in a distinctive glass shaped like a hurricane lamp.  ",
+                            "Hurricane Glass: The drink's name and the distinctive glass it's served in are both inspired by the shape of a hurricane lamp.  ",
+                            "Ingredients: The original Hurricane cocktail recipe called for 4 oz of gold rum (preferably Jamaican rum), 2 oz of lemon juice, and 2 oz of Fassionola (a house specialty passion fruit syrup).  "
+                        ],
+                        "displayed_link": null,
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIGh1cnJpY2FuZSBjb2NrdGFpbCBvcmlnaW5hdGU/IiwibGsiOiJHaXAzYUdWeVpTQmthV1FnZEdobElHaDFjbkpwWTJGdVpTQmpiMk5yZEdGcGJDQnZjbWxuYVc1aGRHVSIsImJzIjoiYy1QeTRsSU16MGd0U2xWSXlVeFJLTWxJVlVqT1Q4NHVTY3pNQVRKeVV4WFNpdkp6N1NWZTJSc3BTU21VRTFESDVjMmxoV3BXVm1sZWVrNnFRbEptVVlwQ1NsRm1YamF5b1EtMGphU2tKRENWNUJkbHBtZm1jY1Z4YWFNYWxsRmFWSlNabkppSFpEVkVhV0pKcXIzRVF6a2pIU210Y3FKMWNQbHo2YUNhNzF5YWxLamdrNWxVaE4yQ0RmSkdNbEpTeVNCRk9kZ1VDVEFDQUEiLCJpZCI6ImZjX3FkRHJaX2FrT0tta3B0UVA5dHp6c1FFXzEifQ==",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIGh1cnJpY2FuZSBjb2NrdGFpbCBvcmlnaW5hdGU%2FIiwibGsiOiJHaXAzYUdWeVpTQmthV1FnZEdobElHaDFjbkpwWTJGdVpTQmpiMk5yZEdGcGJDQnZjbWxuYVc1aGRHVSIsImJzIjoiYy1QeTRsSU16MGd0U2xWSXlVeFJLTWxJVlVqT1Q4NHVTY3pNQVRKeVV4WFNpdkp6N1NWZTJSc3BTU21VRTFESDVjMmxoV3BXVm1sZWVrNnFRbEptVVlwQ1NsRm1YamF5b1EtMGphU2tKRENWNUJkbHBtZm1jY1Z4YWFNYWxsRmFWSlNabkppSFpEVkVhV0pKcXIzRVF6a2pIU210Y3FKMWNQbHo2YUNhNzF5YWxLamdrNWxVaE4yQ0RmSkdNbEpTeVNCRk9kZ1VDVEFDQUEiLCJpZCI6ImZjX3FkRHJaX2FrT0tta3B0UVA5dHp6c1FFXzEifQ%3D%3D"
+                    },
+                    {
+                        "question": "Where did the Cuba Libre cocktail originate?",
+                        "snippet": "While celebrating Cuba's victory at The American Bar in Havana, a U.S. Army Signal Corps captain decided to combine his Cuban BACARDI Rum with Coca-Cola® and the squeeze of a fresh lime, sparking interest among others bar patrons. Soon the entire bar was drinking this enticing, new combination.",
+                        "title": "The Cuba Libre cocktail Originated with BACARDÍ rum Celebrates ...",
+                        "link": "https://www.bacardilimited.com/media/news-archive/the-cuba-libre-cocktail-originated-with-bacardi-rum-celebrates-112th-anniversary/#:~:text=While%20celebrating%20Cuba's%20victory%20at,drinking%20this%20enticing%2C%20new%20combination.",
+                        "displayed_link": "https://www.bacardilimited.com › media › news-archive",
+                        "source_logo": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/eac4432c2ac840557b0cc7de1290c4e004e9978413496478ff01424765e1eebb.png",
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIEN1YmEgTGlicmUgY29ja3RhaWwgb3JpZ2luYXRlPyIsImxrIjoiR2hwamRXSmhJR3hwWW5KbElHTnZZMnQwWVdsc0lHOXlhV2RwYmciLCJicyI6ImMtUHk0bElNejBndFNsVkl5VXhSS01sSVZVak9UODR1U2N6TUFUSnlVeFhTaXZKejdTVmUyUnNwU1NtVUUxREg1YzJsaFdwV1ZtbGVlazZxUWxKbVVZcENTbEZtWGpheW9RLTBqYVNrSkRDVjVCZGxwbWZtY2NWeGFhTWFsbEZhVkpTWm5KaUhaRFZFYVdKSnFyM0VRemtqSFNtdGNxSjFjUGx6NmFDYTcxeWFsS2pnazVsVWhOMkNEZkpHTWxKU3lTQkZPZGdVQ1RBQ0FBIiwiaWQiOiJmY19xZERyWl9ha09LbWtwdFFQOXR6enNRRV8xIn0=",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdobWJHeEpWMGxOV21kMU1FODBaVVF6VVhGdGVYbFBSVVZxVGs4NE5FaHZaVVp3T1hreWJFaG1aM2RyTkdWelRHUjBUM0owVTBGVWFVcFdkekUyZUVzMlVFSlpPWGxtVm1Ka01EZFZOMGwzUWsxb1IwNXFWakl5U2xSRFFSSVhjV1JFY2xwZllXdFBTMjFyY0hSUlVEbDBlbnB6VVVVYUlrRkRSRmhNTkd4b1ZraG5SeTFmZFVGSWJFNHpSM0U1ZDNacFYxUmZYM0p4YjJjIiwiZmN2IjoiMyIsImVpIjoicWREclpfYWtPS21rcHRRUDl0enpzUUUiLCJxYyI6IkNqVjNhR1Z5WlNCa2FXUWdkR2hsSUdGaVlXTmhlR2tnY21salljT25ieUJqYjJOcmRHRnBiQ0J2Y21sbmFXNWhkR1VnWm5KdmJSQUFmWTNESHo4IiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgdGhlIEN1YmEgTGlicmUgY29ja3RhaWwgb3JpZ2luYXRlPyIsImxrIjoiR2hwamRXSmhJR3hwWW5KbElHTnZZMnQwWVdsc0lHOXlhV2RwYmciLCJicyI6ImMtUHk0bElNejBndFNsVkl5VXhSS01sSVZVak9UODR1U2N6TUFUSnlVeFhTaXZKejdTVmUyUnNwU1NtVUUxREg1YzJsaFdwV1ZtbGVlazZxUWxKbVVZcENTbEZtWGpheW9RLTBqYVNrSkRDVjVCZGxwbWZtY2NWeGFhTWFsbEZhVkpTWm5KaUhaRFZFYVdKSnFyM0VRemtqSFNtdGNxSjFjUGx6NmFDYTcxeWFsS2pnazVsVWhOMkNEZkpHTWxKU3lTQkZPZGdVQ1RBQ0FBIiwiaWQiOiJmY19xZERyWl9ha09LbWtwdFFQOXR6enNRRV8xIn0%3D"
+                    }
+                ],
+                "organic_results": [
+                    {
+                        "position": 1,
+                        "title": "Abacaxi Ricaço Cocktail Recipe",
+                        "link": "https://www.diffordsguide.com/cocktails/recipe/1/abacaxi-ricaco",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.diffordsguide.com/cocktails/recipe/1/abacaxi-ricaco&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECB4QAQ",
+                        "displayed_link": "https://www.diffordsguide.com › recipe › abacaxi-ricaco",
+                        "thumbnail": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108df0cccfe7f573b20a3b676088e69d1fba.jpeg",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108dfe225df315cfa9af191c6b5a04542403.png",
+                        "snippet": "History: Adapted from David Embury's 1948 The Fine Art of Mixing Drinks. Pronounced 'Ah-bah-Kah-shee Rich-kah-So', the Portuguese name of this Brazilian drink ...",
+                        "rich_snippet": {
+                            "top": {
+                                "detected_extensions": {
+                                    "rating": 4.0,
+                                    "reviews": 12,
+                                    "min": 2
+                                },
+                                "extensions": [
+                                    "4.0(12)",
+                                    "2 min"
+                                ]
+                            }
+                        },
+                        "source": "Difford's Guide"
+                    },
+                    {
+                        "position": 2,
+                        "title": "abacaxi ricaço | Bartending Notes",
+                        "link": "https://bartendingnotes.wordpress.com/tag/abacaxi-ricaco/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bartendingnotes.wordpress.com/tag/abacaxi-ricaco/&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECBYQAQ",
+                        "displayed_link": "https://bartendingnotes.wordpress.com › abacaxi-ricaco",
+                        "thumbnail": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d1ed3df4dc7d7eebb99f760eb8d5a6301.jpeg",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d798b02bd60010c9b546e34989a4e4d9c.png",
+                        "date": "Jun 22, 2014",
+                        "snippet": "This recipe comes from David Embury's book and although he claims it is a Brazilian cocktail and saying that the name refers to its ...",
+                        "snippet_highlighted_words": [
+                            "Brazilian"
+                        ],
+                        "source": "WordPress.com"
+                    },
+                    {
+                        "position": 3,
+                        "title": "Fix (Generic Name) Cocktail Recipe",
+                        "link": "https://www.diffordsguide.com/cocktails/recipe/2164/fix-generic-name",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.diffordsguide.com/cocktails/recipe/2164/fix-generic-name&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECBcQAQ",
+                        "displayed_link": "https://www.diffordsguide.com › cocktails › fix-generic...",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108db6306ff9c96783380be4d603bc380acf.png",
+                        "snippet": "A Fix is a classic style of drink that consists of a spirit, lemon juice, and some kind of sweet fruit served short.",
+                        "snippet_highlighted_words": [
+                            "is",
+                            "drink"
+                        ],
+                        "rich_snippet": {
+                            "top": {
+                                "detected_extensions": {
+                                    "rating": 4.0,
+                                    "reviews": 6,
+                                    "min": 2
+                                },
+                                "extensions": [
+                                    "4.0(6)",
+                                    "2 min"
+                                ]
+                            }
+                        },
+                        "source": "Difford's Guide"
+                    },
+                    {
+                        "position": 4,
+                        "title": "pineapple | Bartending Notes",
+                        "link": "https://bartendingnotes.wordpress.com/tag/pineapple/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://bartendingnotes.wordpress.com/tag/pineapple/&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECBMQAQ",
+                        "displayed_link": "https://bartendingnotes.wordpress.com › tag › pineapple",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108decf98989f2b46f9511bc2a9344b2cd20.png",
+                        "snippet": "This recipe comes from David Embury's book and although he claims it is a Brazilian cocktail and saying that the name refers to its deliciousness, Rico is a ...",
+                        "snippet_highlighted_words": [
+                            "Brazilian cocktail"
+                        ],
+                        "source": "WordPress.com"
+                    },
+                    {
+                        "position": 5,
+                        "title": "Bartender's Blueprint: Series Operations on Cocktail Concoctions",
+                        "link": "https://profiles.datawars.io/ebner07/projects/9a1cc325-31cc-4c48-b9b7-4c5a33b32dbf",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://profiles.datawars.io/ebner07/projects/9a1cc325-31cc-4c48-b9b7-4c5a33b32dbf&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECBIQAQ",
+                        "displayed_link": "https://profiles.datawars.io › ebner07 › projects",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108dfee45b04d3a9aee02f3a51c397b86af2.png",
+                        "snippet": "title, glass, garnish, recipe, ingredients. 0, Abacaxi Ricaço, Pineapple shell (frozen) glass, Cut a straw sized hole in the top of the pinea.",
+                        "snippet_highlighted_words": [
+                            "Abacaxi Ricaço"
+                        ],
+                        "source": "DataWars"
+                    },
+                    {
+                        "position": 6,
+                        "title": "Master the New Orleans Classics - Punch Drink",
+                        "link": "https://punchdrink.com/articles/best-new-orleans-cocktail-recipes/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://punchdrink.com/articles/best-new-orleans-cocktail-recipes/&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECD0QAQ",
+                        "displayed_link": "https://punchdrink.com › Articles",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d690280be8a780e924e7375b83ee27466.png",
+                        "date": "Mar 3, 2025",
+                        "snippet": "According to most accounts, the drink was created at New Orleans bar Tujague's and the version perfected there by bartender Paul Gustings ...",
+                        "snippet_highlighted_words": [
+                            "New Orleans bar Tujague's"
+                        ],
+                        "source": "punchdrink.com"
+                    },
+                    {
+                        "position": 7,
+                        "title": "COMO FAZER ABACAXI RICAÇO",
+                        "link": "https://www.youtube.com/watch?v=o5gSZR4Ph4Y",
+                        "displayed_link": "4.4K+ views · 2 years ago",
+                        "thumbnail": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d5f9bf96d2fd365d748ed0642bd0ce4dd.jpeg",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d5885a500c649362ff09d3a16b4b2f72d.png",
+                        "snippet": "#drinkabacaxi #drinks #bartender #rum #refrescante 1 - Abacaxi 100ml - Rum ouro 15ml - Suco fresco de limão 30ml - Calda Simples Corre aqui ...",
+                        "duration": "4:55",
+                        "video_link": "https://encrypted-vtbn0.gstatic.com/video?q=tbn:ANd9GcTn7sxBfWNV5fE9sYQmKEkW198iLhvELuBEtQ",
+                        "source": "YouTube · Mundo dos Drinks"
+                    },
+                    {
+                        "position": 8,
+                        "title": "How To Train Your Own GenAI Model",
+                        "link": "https://developer.squareup.com/blog/how-to-train-your-own-genai-model/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://developer.squareup.com/blog/how-to-train-your-own-genai-model/&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECD8QAQ",
+                        "displayed_link": "https://developer.squareup.com › blog › how-to-train-yo...",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d44f81c0c0a1494e4e74cda8d666e5f08.png",
+                        "date": "Dec 11, 2023",
+                        "snippet": "We're going to build a GenAI model that takes the name of a cocktail (real or made up) and generates the ingredients for that cocktail.",
+                        "snippet_highlighted_words": [
+                            "cocktail",
+                            "cocktail"
+                        ],
+                        "source": "Square"
+                    },
+                    {
+                        "position": 9,
+                        "title": "Caipirinha",
+                        "link": "https://en.wikipedia.org/wiki/Caipirinha",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Caipirinha&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECEIQAQ",
+                        "displayed_link": "https://en.wikipedia.org › wiki › Caipirinha",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d4af3f390a4028dd056b9160dc9593ee9.png",
+                        "snippet": "Caipirinha is a Brazilian cocktail, of São Paulo origin, with cachaça (sugarcane hard liquor), sugar, lime, and ice. The drink is prepared by mixing the ...",
+                        "snippet_highlighted_words": [
+                            "São Paulo origin"
+                        ],
+                        "missing": [
+                            "Ricaço"
+                        ],
+                        "must_include": {
+                            "word": "Ricaço",
+                            "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Where+did+the+Abacaxi+%22Rica%C3%A7o%22+cocktail+originate+from&sa=X&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ5t4CegQIRhAB"
+                        },
+                        "source": "Wikipedia"
+                    },
+                    {
+                        "position": 10,
+                        "title": "Hawaii Inspired Cocktails",
+                        "link": "https://www.hawaiianairlines.com/hawaii-stories/food-and-entertainment/cocktails",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hawaiianairlines.com/hawaii-stories/food-and-entertainment/cocktails&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQFnoECEMQAQ",
+                        "displayed_link": "https://www.hawaiianairlines.com › hawaii-stories › cock...",
+                        "favicon": "https://serpapi.com/searches/67ebd0a8cb053d1f79715f0e/images/3713dda675e419446464462e2084108d363c8954b3722d2d6aedc85d360eae07.png",
+                        "snippet": "It was purportedly invented in 1944 at the Trader Vic's restaurant in Oakland, Calif. The original concoction is vastly different from the imitations served ...",
+                        "snippet_highlighted_words": [
+                            "Trader Vic's restaurant in Oakland, Calif"
+                        ],
+                        "source": "Hawaiian Airlines"
+                    }
+                ],
+                "related_searches": [
+                    {
+                        "block_position": 1,
+                        "query": "Where did the abacaxi ricaço cocktail originate from map",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Where+did+the+abacaxi+rica%C3%A7o+cocktail+originate+from+map&sa=X&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ1QJ6BAhFEAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+abacaxi+rica%C3%A7o+cocktail+originate+from+map"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Where did the abacaxi ricaço cocktail originate from qui",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Where+did+the+abacaxi+rica%C3%A7o+cocktail+originate+from+qui&sa=X&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ1QJ6BAg-EAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+abacaxi+rica%C3%A7o+cocktail+originate+from+qui"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Acapulco cocktail",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Acapulco+cocktail&sa=X&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ1QJ6BAg8EAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Acapulco+cocktail"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Abbey cocktail",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Abbey+cocktail&sa=X&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ1QJ6BAg7EAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Abbey+cocktail"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Tiki cocktails Difford's",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Tiki+cocktails+Difford%27s&sa=X&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ1QJ6BAg6EAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Tiki+cocktails+Difford%27s"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Acapulco Gold drink",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Acapulco+Gold+drink&sa=X&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ1QJ6BAg5EAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Acapulco+Gold+drink"
+                    }
+                ],
+                "pagination": {
+                    "current": 1,
+                    "next": "https://www.google.com/search?q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=qdDrZ_akOKmkptQP9tzzsQE&start=10&sa=N&sstk=Af40H4WZwJFChGFRsZJlzOs0p9xmeLt7IcIHr3s0MwxqzVRnsSbxJ9pMJlqKeHl6H8A3QCLDqmRaaVHYQNfHczYUkInyoOwkEgXx4g&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ8NMDegQIBxAM",
+                    "other_pages": {
+                        "2": "https://www.google.com/search?q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=qdDrZ_akOKmkptQP9tzzsQE&start=10&sa=N&sstk=Af40H4WZwJFChGFRsZJlzOs0p9xmeLt7IcIHr3s0MwxqzVRnsSbxJ9pMJlqKeHl6H8A3QCLDqmRaaVHYQNfHczYUkInyoOwkEgXx4g&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ8tMDegQIBxAE",
+                        "3": "https://www.google.com/search?q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=qdDrZ_akOKmkptQP9tzzsQE&start=20&sa=N&sstk=Af40H4WZwJFChGFRsZJlzOs0p9xmeLt7IcIHr3s0MwxqzVRnsSbxJ9pMJlqKeHl6H8A3QCLDqmRaaVHYQNfHczYUkInyoOwkEgXx4g&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ8tMDegQIBxAG",
+                        "4": "https://www.google.com/search?q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=qdDrZ_akOKmkptQP9tzzsQE&start=30&sa=N&sstk=Af40H4WZwJFChGFRsZJlzOs0p9xmeLt7IcIHr3s0MwxqzVRnsSbxJ9pMJlqKeHl6H8A3QCLDqmRaaVHYQNfHczYUkInyoOwkEgXx4g&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ8tMDegQIBxAI",
+                        "5": "https://www.google.com/search?q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=qdDrZ_akOKmkptQP9tzzsQE&start=40&sa=N&sstk=Af40H4WZwJFChGFRsZJlzOs0p9xmeLt7IcIHr3s0MwxqzVRnsSbxJ9pMJlqKeHl6H8A3QCLDqmRaaVHYQNfHczYUkInyoOwkEgXx4g&ved=2ahUKEwi2ndOF4LaMAxUpkokEHXbuPBYQ8tMDegQIBxAK"
+                    }
+                },
+                "serpapi_pagination": {
+                    "current": 1,
+                    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&start=10",
+                    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&start=10",
+                    "other_pages": {
+                        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&start=10",
+                        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&start=20",
+                        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&start=30",
+                        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Abacaxi+Rica%C3%A7o+cocktail+originate+from&start=40"
+                    }
+                }
+            }
+        }
+    ],
+    "Absinthe Frappé": [
+        {
+            "search_result": {
+                "search_metadata": {
+                    "id": "67ebd0b8a919a918cb7838b7",
+                    "status": "Success",
+                    "json_endpoint": "https://serpapi.com/searches/a995e505504ba643/67ebd0b8a919a918cb7838b7.json",
+                    "created_at": "2025-04-01 11:40:40 UTC",
+                    "processed_at": "2025-04-01 11:40:40 UTC",
+                    "google_url": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&oq=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&hl=en&gl=us&sourceid=chrome&ie=UTF-8",
+                    "raw_html_file": "https://serpapi.com/searches/a995e505504ba643/67ebd0b8a919a918cb7838b7.html",
+                    "total_time_taken": 2.46
+                },
+                "search_parameters": {
+                    "engine": "google",
+                    "q": "Where did the Absinthe Frappé cocktail originate from",
+                    "google_domain": "google.com",
+                    "hl": "en",
+                    "gl": "us",
+                    "device": "desktop"
+                },
+                "search_information": {
+                    "query_displayed": "Where did the Absinthe Frappé cocktail originate from",
+                    "total_results": 322000,
+                    "time_taken_displayed": 0.34,
+                    "organic_results_state": "Results for exact spelling"
+                },
+                "knowledge_graph": {
+                    "entity_type": "webanswers"
+                },
+                "related_questions": [
+                    {
+                        "question": "Where did Absinth originate?",
+                        "snippet": "Absinthe was created in the canton of Neuchâtel in Switzerland in the late 18th century by the French physician Pierre Ordinaire. It rose to great popularity as an alcoholic drink in late 19th- and early 20th-century France, particularly among Parisian artists and writers.",
+                        "title": "Absinthe - Wikipedia",
+                        "link": "https://en.wikipedia.org/wiki/Absinthe#:~:text=Absinthe%20was%20created%20in%20the,among%20Parisian%20artists%20and%20writers.",
+                        "displayed_link": "https://en.wikipedia.org › wiki › Absinthe",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyWLLwzimMVUHkXBQVkEoUusljgG6CiuTWZIAZiGN0&s",
+                        "source_logo": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/b014a7a79b4818cb8e8c71235a67481d108f39777d4d25c591e793ad97130bc2.png",
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgQWJzaW50aCBvcmlnaW5hdGU/IiwibGsiOiJHaHQzYUdWeVpTQmthV1FnWVdKemFXNTBhQ0J2Y21sbmFXNWhkR1UiLCJicyI6ImMtTnk0SklKejBndFNsVkl5VXhSY0V3cXpzd3J5VkRJTDhwTXo4eExMRW0xbHpoVlp5UXJKVjBPVjVLSXJvUXJnRXZOSTc5Y0lTVmZvVEtfVkNHbEtETXZXeUc5S0RVMVR5RXRNYk9vRXFZRGFOWXlmaU5sS1VWc2Nnb1pRQk5LOGlHNnVSeTRGTUl6RWtzVU1vc1ZFcUVHSmlmbTVLU21JSm0xa05kSVVrb2NoelRRQkJubnhEd2tCOEV0eWt0TkxMR1hXTThOOGxVeWJpVUNqQUEiLCJpZCI6ImZjX3VkRHJaX2ZYTTZDUXdia1BpLUQzLUFVXzEifQ==",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJXaGVyZSBkaWQgQWJzaW50aCBvcmlnaW5hdGU%2FIiwibGsiOiJHaHQzYUdWeVpTQmthV1FnWVdKemFXNTBhQ0J2Y21sbmFXNWhkR1UiLCJicyI6ImMtTnk0SklKejBndFNsVkl5VXhSY0V3cXpzd3J5VkRJTDhwTXo4eExMRW0xbHpoVlp5UXJKVjBPVjVLSXJvUXJnRXZOSTc5Y0lTVmZvVEtfVkNHbEtETXZXeUc5S0RVMVR5RXRNYk9vRXFZRGFOWXlmaU5sS1VWc2Nnb1pRQk5LOGlHNnVSeTRGTUl6RWtzVU1vc1ZFcUVHSmlmbTVLU21JSm0xa05kSVVrb2NoelRRQkJubnhEd2tCOEV0eWt0TkxMR1hXTThOOGxVeWJpVUNqQUEiLCJpZCI6ImZjX3VkRHJaX2ZYTTZDUXdia1BpLUQzLUFVXzEifQ%3D%3D"
+                    },
+                    {
+                        "question": "How do you drink green fairy absinthe?",
+                        "snippet": null,
+                        "title": "Absinthe in Paris : Summoning the Green Fairy",
+                        "link": "https://mymelange.net/mymelange/2008/03/summoning-the-green-fairy.html",
+                        "list": [
+                            "Pour a shot in the bottom of a glass.",
+                            "Put the special slotted spoon over the top of the glass",
+                            "Put a sugar cube or two on top of the slots in the spoon",
+                            "Slowly drip cold water over the cube, a little at a time, until the sugar dissolves"
+                        ],
+                        "displayed_link": "https://mymelange.net › mymelange › 2008/03 › summo...",
+                        "source_logo": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/b014a7a79b4818cb8e8c71235a67481da3970a24e1aac2bf428da83ea2e085ba.jpeg",
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJIb3cgZG8geW91IGRyaW5rIGdyZWVuIGZhaXJ5IGFic2ludGhlPyIsImxrIjoiR2lGbmNtVmxiaUJtWVdseWVTQmhZbk5wYm5Sb1pTQm9iM2NnZEc4Z1pISnBibXMiLCJicyI6ImMtTnk0SklKejBndFNsVkl5VXhSY0V3cXpzd3J5VkRJTDhwTXo4eExMRW0xbHpoVlp5UXJKVjBPVjVLSXJvUXJnRXZOSTc5Y0lTVmZvVEtfVkNHbEtETXZXeUc5S0RVMVR5RXRNYk9vRXFZRGFOWXlmaU5sS1VWc2Nnb1pRQk5LOGlHNnVSeTRGTUl6RWtzVU1vc1ZFcUVHSmlmbTVLU21JSm0xa05kSVVrb2NoelRRQkJubnhEd2tCOEV0eWt0TkxMR1hXTThOOGxVeWJpVUNqQUEiLCJpZCI6ImZjX3VkRHJaX2ZYTTZDUXdia1BpLUQzLUFVXzEifQ==",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJIb3cgZG8geW91IGRyaW5rIGdyZWVuIGZhaXJ5IGFic2ludGhlPyIsImxrIjoiR2lGbmNtVmxiaUJtWVdseWVTQmhZbk5wYm5Sb1pTQm9iM2NnZEc4Z1pISnBibXMiLCJicyI6ImMtTnk0SklKejBndFNsVkl5VXhSY0V3cXpzd3J5VkRJTDhwTXo4eExMRW0xbHpoVlp5UXJKVjBPVjVLSXJvUXJnRXZOSTc5Y0lTVmZvVEtfVkNHbEtETXZXeUc5S0RVMVR5RXRNYk9vRXFZRGFOWXlmaU5sS1VWc2Nnb1pRQk5LOGlHNnVSeTRGTUl6RWtzVU1vc1ZFcUVHSmlmbTVLU21JSm0xa05kSVVrb2NoelRRQkJubnhEd2tCOEV0eWt0TkxMR1hXTThOOGxVeWJpVUNqQUEiLCJpZCI6ImZjX3VkRHJaX2ZYTTZDUXdia1BpLUQzLUFVXzEifQ%3D%3D"
+                    },
+                    {
+                        "question": "What is a drink called absinthe?",
+                        "snippet": "Traditionally, absinthe is distilled from dried herbs and wormwood. After mashing the wormwood and herbs together, the mixture is distilled in a water or steam bath until the distillate reaches an alcohol volume of 60% to 80%.",
+                        "title": "What Is Absinthe? History, Effects, Safety - WebMD",
+                        "link": "https://www.webmd.com/diet/what-to-know-about-absinthe#:~:text=Traditionally%2C%20absinthe%20is%20distilled%20from,of%2060%25%20to%2080%25.",
+                        "displayed_link": "https://www.webmd.com › what-to-know-about-absinthe",
+                        "source_logo": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/b014a7a79b4818cb8e8c71235a67481d3f0bfc1acb6079c8fe1989aa20059c74.png",
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJXaGF0IGlzIGEgZHJpbmsgY2FsbGVkIGFic2ludGhlPyIsImxrIjoiR2hkaElHUnlhVzVySUdOaGJHeGxaQ0JoWW5OcGJuUm9aUSIsImJzIjoiYy1OeTRKSUp6MGd0U2xWSXlVeFJjRXdxenN3cnlWRElMOHBNejh4TExFbTFsemhWWnlRckpWME9WNUtJcm9RcmdFdk5JNzljSVNWZm9US19WQ0dsS0RNdld5RzlLRFUxVHlFdE1iT29FcVlEYU5ZeWZpTmxLVVZzY2dvWlFCTks4aUc2dVJ5NEZNSXpFa3NVTW9zVkVxRUdKaWZtNUtTbUlKbTFrTmRJVWtvY2h6VFFCQm5ueER3a0I4RXR5a3ROTExHWFdNOE44bFV5YmlVQ2pBQSIsImlkIjoiZmNfdWREclpfZlhNNkNRd2JrUGktRDMtQVVfMSJ9",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJXaGF0IGlzIGEgZHJpbmsgY2FsbGVkIGFic2ludGhlPyIsImxrIjoiR2hkaElHUnlhVzVySUdOaGJHeGxaQ0JoWW5OcGJuUm9aUSIsImJzIjoiYy1OeTRKSUp6MGd0U2xWSXlVeFJjRXdxenN3cnlWRElMOHBNejh4TExFbTFsemhWWnlRckpWME9WNUtJcm9RcmdFdk5JNzljSVNWZm9US19WQ0dsS0RNdld5RzlLRFUxVHlFdE1iT29FcVlEYU5ZeWZpTmxLVVZzY2dvWlFCTks4aUc2dVJ5NEZNSXpFa3NVTW9zVkVxRUdKaWZtNUtTbUlKbTFrTmRJVWtvY2h6VFFCQm5ueER3a0I4RXR5a3ROTExHWFdNOE44bFV5YmlVQ2pBQSIsImlkIjoiZmNfdWREclpfZlhNNkNRd2JrUGktRDMtQVVfMSJ9"
+                    },
+                    {
+                        "question": "Can you drink absinthe neat?",
+                        "snippet": "Absinthe is an herbal liquor (not liqueur--no sugar) which has similarities in production and effect to overproof (``Navy Strength'') gin. If you like anise-flavored drinks, you'll probably like it, but unlike ouzo, you shouldn't drink it neat (straight, without dilution).",
+                        "title": "Have you ever tried Absinthe? Do you care to share your experience? - Quora",
+                        "link": "https://www.quora.com/Have-you-ever-tried-Absinthe-Do-you-care-to-share-your-experience",
+                        "displayed_link": "https://www.quora.com › Have-you-ever-tried-Absinthe-...",
+                        "source_logo": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/b014a7a79b4818cb8e8c71235a67481dcef55037ada87896fba408b74fd0cffe.png",
+                        "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJDYW4geW91IGRyaW5rIGFic2ludGhlIG5lYXQ/IiwibGsiOiJHaHRqWVc0Z2VXOTFJR1J5YVc1cklHRmljMmx1ZEdobElHNWxZWFEiLCJicyI6ImMtTnk0SklKejBndFNsVkl5VXhSY0V3cXpzd3J5VkRJTDhwTXo4eExMRW0xbHpoVlp5UXJKVjBPVjVLSXJvUXJnRXZOSTc5Y0lTVmZvVEtfVkNHbEtETXZXeUc5S0RVMVR5RXRNYk9vRXFZRGFOWXlmaU5sS1VWc2Nnb1pRQk5LOGlHNnVSeTRGTUl6RWtzVU1vc1ZFcUVHSmlmbTVLU21JSm0xa05kSVVrb2NoelRRQkJubnhEd2tCOEV0eWt0TkxMR1hXTThOOGxVeWJpVUNqQUEiLCJpZCI6ImZjX3VkRHJaX2ZYTTZDUXdia1BpLUQzLUFVXzEifQ==",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRXFFQkNtSkJRUzFMVkdoa1dFTTBaVTVEWDNCSmVsRlNSVloyVTFKS05WQklXRlpyVVd0YWNIaFdNVk10V0hacWRuWktaRGd6YTBkWFlqbFpTMnRKYzNNd1RHTlBTWHAyZDFodk1ITnlSRUZYYWtkVFRtZ3lkMmRYZUU1SFVUVjZWSFpIYUd4NWR4SVhkV1JFY2xwZlpsaE5Oa05SZDJKclVHa3RSRE10UVZVYUlrRkRSRmhNTkd0TVRGZDRMVUZ1VlZWamRVaFNZMlZNU1haWVRHbG5TbEYwVEdjIiwiZmN2IjoiMyIsImVpIjoidWREclpfZlhNNkNRd2JrUGktRDMtQVUiLCJxYyI6ImMtTXlLODlJTFVwVlNNbE1VU2pKU0ZWSVRDck96QU14MG9vU0N3b09yMVJJemtfT0xrbk16RkhJTDhwTXo4eExMQUZKNWVjS01OUmVaLUt3QndBIiwicXVlc3Rpb24iOiJDYW4geW91IGRyaW5rIGFic2ludGhlIG5lYXQ%2FIiwibGsiOiJHaHRqWVc0Z2VXOTFJR1J5YVc1cklHRmljMmx1ZEdobElHNWxZWFEiLCJicyI6ImMtTnk0SklKejBndFNsVkl5VXhSY0V3cXpzd3J5VkRJTDhwTXo4eExMRW0xbHpoVlp5UXJKVjBPVjVLSXJvUXJnRXZOSTc5Y0lTVmZvVEtfVkNHbEtETXZXeUc5S0RVMVR5RXRNYk9vRXFZRGFOWXlmaU5sS1VWc2Nnb1pRQk5LOGlHNnVSeTRGTUl6RWtzVU1vc1ZFcUVHSmlmbTVLU21JSm0xa05kSVVrb2NoelRRQkJubnhEd2tCOEV0eWt0TkxMR1hXTThOOGxVeWJpVUNqQUEiLCJpZCI6ImZjX3VkRHJaX2ZYTTZDUXdia1BpLUQzLUFVXzEifQ%3D%3D"
+                    }
+                ],
+                "answer_box": {
+                    "type": "organic_result",
+                    "title": "The Absinthe Frappe: New Orleans Cocktail",
+                    "link": "https://www.neworleans.com/drink/cocktails/absinthe-frappe/#:~:text=Although%20the%20song%20is%20a,in%201874%20by%20Cayetano%20Ferrer.",
+                    "displayed_link": "https://www.neworleans.com › drink › cocktails › absin...",
+                    "snippet": "Although the song is a product of New York, the concoction itself was invented at the Old Absinthe House bar in New Orleans in 1874 by Cayetano Ferrer.",
+                    "snippet_highlighted_words": [
+                        "the Old Absinthe House bar in New Orleans"
+                    ],
+                    "answer": "New Orleans",
+                    "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/ba89397d7ab5c40acaf1d7f81c42e02f986da087af6d0c14.png",
+                    "source": "New Orleans Tourism"
+                },
+                "organic_results": [
+                    {
+                        "position": 1,
+                        "title": "Absinthe Frappé History",
+                        "link": "https://www.traveldistilled.com/absinthe-frappe-history/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.traveldistilled.com/absinthe-frappe-history/&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECBAQAQ",
+                        "displayed_link": "https://www.traveldistilled.com › absinthe-frappe-history",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dcc66d2476dc69bc4bfc0404c28c38878cc.png",
+                        "snippet": "We do know about the Absinthe Frappé, however. It was created in 1874 by Cayetano Ferrer in what was then called Aleix's Coffee House in New Orleans.",
+                        "snippet_highlighted_words": [
+                            "Aleix's Coffee House in New Orleans"
+                        ],
+                        "source": "Travel Distilled"
+                    },
+                    {
+                        "position": 2,
+                        "title": "Absinthe Frappé",
+                        "link": "https://www.moodymixologist.com/blog/absinthe-frappe",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.moodymixologist.com/blog/absinthe-frappe&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECA8QAQ",
+                        "displayed_link": "https://www.moodymixologist.com › absinthe-frappe",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dcce67df487c4f3a3e28c6224a4d42394ca.png",
+                        "date": "Apr 19, 2021",
+                        "snippet": "Bartender Cayetano Ferrer invented the Absinthe Frappé in 1874 at what would later be known as the Old Absinthe House. Although hard to imagine ...",
+                        "snippet_highlighted_words": [
+                            "etano Ferrer"
+                        ],
+                        "rich_snippet": {
+                            "top": {
+                                "detected_extensions": {
+                                    "rating": 4.8,
+                                    "reviews": 6
+                                },
+                                "extensions": [
+                                    "4.8(6)"
+                                ]
+                            }
+                        },
+                        "source": "Moody Mixologist"
+                    },
+                    {
+                        "position": 3,
+                        "title": "The Absinthe Frappé",
+                        "link": "https://lsupress.org/9780807179291/the-absinthe-frappe/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://lsupress.org/9780807179291/the-absinthe-frappe/&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECBEQAQ",
+                        "displayed_link": "https://lsupress.org › the-absinthe-frappe",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dcc31c717c55b823526b90a552605394f98.png",
+                        "snippet": "Marielle Songy reveals how bartender Cayetano Ferrér invented the concoction and delves into the early days of the drink and its first home, the Old Absinthe ...",
+                        "snippet_highlighted_words": [
+                            "bartender Cayetano Ferrér invented the concoction"
+                        ],
+                        "rich_snippet": {
+                            "bottom": {
+                                "detected_extensions": {
+                                    "price": 24.95,
+                                    "currency": "$"
+                                },
+                                "extensions": [
+                                    "$24.95"
+                                ]
+                            }
+                        },
+                        "source": "LSU Press"
+                    },
+                    {
+                        "position": 4,
+                        "title": "Killer Cocktail: the Absinthe Frappé",
+                        "link": "https://gardenandgun.com/recipe/killer-cocktail-the-absinthe-frappe/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://gardenandgun.com/recipe/killer-cocktail-the-absinthe-frappe/&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECA4QAQ",
+                        "displayed_link": "https://gardenandgun.com › Recipe",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dccd980ac1b3433839d22f48b022b7d42b1.png",
+                        "date": "Oct 21, 2024",
+                        "snippet": "First mixed by Cayetano Ferrer in 1874, the cocktail is still on the menu at the 240 Bourbon Street tavern, which now bears the name Old Absinthe House.",
+                        "snippet_highlighted_words": [
+                            "cocktail is"
+                        ],
+                        "source": "Garden & Gun"
+                    },
+                    {
+                        "position": 5,
+                        "title": "Absinthe Frappe Cocktail Recipe",
+                        "link": "https://www.liquor.com/recipes/absinthe-frappe/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.liquor.com/recipes/absinthe-frappe/&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECFAQAQ",
+                        "displayed_link": "https://www.liquor.com › ... › By Spirit › Other Cocktails",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dccc963b6ab601976e702e6c603751e2d0f.png",
+                        "date": "Feb 23, 2022",
+                        "snippet": "In 1874, bartender Cayetano Ferrer invented the cocktail—an icy mix of absinthe, anisette, and simple syrup topped off with club soda and ...",
+                        "snippet_highlighted_words": [
+                            "bartender Cayetano Ferrer"
+                        ],
+                        "rich_snippet": {
+                            "top": {
+                                "detected_extensions": {
+                                    "rating": 4.1,
+                                    "reviews": 26,
+                                    "min": 3
+                                },
+                                "extensions": [
+                                    "4.1(26)",
+                                    "3 min"
+                                ]
+                            }
+                        },
+                        "source": "Liquor.com"
+                    },
+                    {
+                        "position": 6,
+                        "title": "Absinthe Frappe by Marielle Songy - Out All Day",
+                        "link": "https://www.outalldaynola.com/absinthe-frappe-by-marielle-songy.html",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.outalldaynola.com/absinthe-frappe-by-marielle-songy.html&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECEYQAQ",
+                        "displayed_link": "https://www.outalldaynola.com › absinthe-frappe-by-mar...",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dcc7d50040f8ea30b35da9a9d763a02f451.png",
+                        "snippet": "The Absinthe Frappé was invented here in New Orleans at The Old Absinthe House, and I knew that the creation of the cocktail and the history of absinthe would ...",
+                        "snippet_highlighted_words": [
+                            "was invented here in New Orleans at The Old Absinthe House"
+                        ],
+                        "source": "Out All Day: New Orleans"
+                    },
+                    {
+                        "position": 7,
+                        "title": "The History of Absinthe in New Orleans",
+                        "link": "https://www.explorelouisiana.com/articles/history-absinthe-new-orleans",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.explorelouisiana.com/articles/history-absinthe-new-orleans&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECEoQAQ",
+                        "displayed_link": "https://www.explorelouisiana.com › articles › history-abs...",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dcc64b79887eecaf738d110e645f0c21ace.png",
+                        "snippet": "What is absinthe? Absinthe is a spirit that has a lot of history in New Orleans. Discover more about this drink, the Old Absinthe House and more.",
+                        "snippet_highlighted_words": [
+                            "Absinthe is a spirit that has a lot of history in New Orleans"
+                        ],
+                        "sitelinks": {
+                            "inline": [
+                                {
+                                    "title": "A History And Celebration Of...",
+                                    "link": "https://www.explorelouisiana.com/articles/history-absinthe-new-orleans#:~:text=A%20history%20and%20celebration%20of%20the%20drink%20known%20as%20%60%60the%20green%20fairy.%27%27"
+                                },
+                                {
+                                    "title": "The Original Old Absinthe...",
+                                    "link": "https://www.explorelouisiana.com/articles/history-absinthe-new-orleans#:~:text=The%20Original%20Old%20Absinthe%20House,-The%20Original%20Old%20Absinthe%20House"
+                                },
+                                {
+                                    "title": "La Galerie De L'absinthe",
+                                    "link": "https://www.explorelouisiana.com/articles/history-absinthe-new-orleans#:~:text=La%20Galerie%20de%20l%27Absinthe,-The%20Southern%20Food%20and%20Beverage"
+                                }
+                            ]
+                        },
+                        "source": "Explore Louisiana"
+                    },
+                    {
+                        "position": 8,
+                        "title": "Absinthe Frappe Cocktail Recipe",
+                        "link": "https://www.gastronomblog.com/absinthe-frappe-recipe/",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.gastronomblog.com/absinthe-frappe-recipe/&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECFUQAQ",
+                        "displayed_link": "https://www.gastronomblog.com › absinthe-frappe-recipe",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dcc1ea51c820c2b1f9e5e90e9579ada8ca1.png",
+                        "date": "Jun 10, 2023",
+                        "snippet": "This Absinthe Frappe recipe was invented at the Old Absinthe House bar in New Orleans in 1874 by Cayetano Ferrer. A simple, strong cocktail, ...",
+                        "snippet_highlighted_words": [
+                            "Old Absinthe House bar in New Orleans"
+                        ],
+                        "sitelinks": {
+                            "inline": [
+                                {
+                                    "title": "Absinthe Frappe",
+                                    "link": "https://www.gastronomblog.com/absinthe-frappe-recipe/#:~:text=Absinthe%20Frappe,-But%2C%20we%20think%20the"
+                                },
+                                {
+                                    "title": "History Of Absinthe In The...",
+                                    "link": "https://www.gastronomblog.com/absinthe-frappe-recipe/#:~:text=History%20of%20Absinthe%20in%20the%20US"
+                                },
+                                {
+                                    "title": "This Cheat Sheet Is A Great...",
+                                    "link": "https://www.gastronomblog.com/absinthe-frappe-recipe/#:~:text=This%20cheat%20sheet%20is%20a%20great%20way%20to%20know%20what%20to%20buy%2C%20and%20the%20brands%20that%20we%20like%20to%20use%20the%20most%21"
+                                }
+                            ]
+                        },
+                        "rich_snippet": {
+                            "top": {
+                                "detected_extensions": {
+                                    "rating": 5.0,
+                                    "reviews": 1,
+                                    "min": 5
+                                },
+                                "extensions": [
+                                    "5.0(1)",
+                                    "5 min"
+                                ]
+                            }
+                        },
+                        "source": "Gastronom Cocktails"
+                    },
+                    {
+                        "position": 9,
+                        "title": "Absinthe Frappe | Local Cocktail From New Orleans",
+                        "link": "https://www.tasteatlas.com/absinthe-frappe",
+                        "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.tasteatlas.com/absinthe-frappe&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8QFnoECEgQAQ",
+                        "displayed_link": "https://www.tasteatlas.com › absinthe-frappe",
+                        "favicon": "https://serpapi.com/searches/67ebd0b8a919a918cb7838b7/images/da93fa5de7590a3ec37914aff1b17dcc11917cceab0cfd25a679bd780aca7199.png",
+                        "date": "Oct 12, 2023",
+                        "snippet": "Absinthe Frappé is a classic cocktail that dates back to the early 20th century and is intimately linked with the vibrant and colorful history ...",
+                        "snippet_highlighted_words": [
+                            "Absinthe Frappé is a classic cocktail that dates back to the early 20th century"
+                        ],
+                        "source": "TasteAtlas"
+                    }
+                ],
+                "related_searches": [
+                    {
+                        "block_position": 1,
+                        "query": "Absinthe Frappe Old Absinthe House",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Absinthe+Frappe+Old+Absinthe+House&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAhFEAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Absinthe+Frappe+Old+Absinthe+House"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Absinthe Frappe New Orleans",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Absinthe+Frappe+New+Orleans&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAhDEAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Absinthe+Frappe+New+Orleans"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Absinthe cocktails",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Absinthe+cocktails&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAhEEAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Absinthe+cocktails"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Absinthe bar",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Absinthe+bar&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAhCEAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Absinthe+bar"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Absinthe drip",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Absinthe+drip&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAhBEAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Absinthe+drip"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Vieux Carré cocktail history",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Vieux+Carr%C3%A9+cocktail+history&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAhAEAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Vieux+Carr%C3%A9+cocktail+history"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "Ramos Fizz origin",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=Ramos+Fizz+origin&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAg_EAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Ramos+Fizz+origin"
+                    },
+                    {
+                        "block_position": 1,
+                        "query": "What cocktails were invented in New Orleans",
+                        "link": "https://www.google.com/search?sca_esv=afa94e21eef4b989&hl=en&gl=us&q=What+cocktails+were+invented+in+New+Orleans&sa=X&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q1QJ6BAg-EAE",
+                        "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=What+cocktails+were+invented+in+New+Orleans"
+                    }
+                ],
+                "pagination": {
+                    "current": 1,
+                    "next": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=10&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8NMDegQICBAW",
+                    "other_pages": {
+                        "2": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=10&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAE",
+                        "3": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=20&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAG",
+                        "4": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=30&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAI",
+                        "5": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=40&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAK",
+                        "6": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=50&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAM",
+                        "7": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=60&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAO",
+                        "8": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=70&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAQ",
+                        "9": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=80&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAS",
+                        "10": "https://www.google.com/search?q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&sca_esv=afa94e21eef4b989&hl=en&gl=us&ei=udDrZ_fXM6CQwbkPi-D3-AU&start=90&sa=N&sstk=Af40H4Uc9WVodnbSbE6cZmosc8b60nidHvP-RpFCXXd5g5JjbyV6tGgg5YC29KNKnilRT6wHGg9Z7TNPG0KpJtXZL8rhtFyB9zir6Q&ved=2ahUKEwi3mJ-N4LaMAxUgSDABHQvwHV8Q8tMDegQICBAU"
+                    }
+                },
+                "serpapi_pagination": {
+                    "current": 1,
+                    "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=10",
+                    "next": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=10",
+                    "other_pages": {
+                        "2": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=10",
+                        "3": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=20",
+                        "4": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=30",
+                        "5": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=40",
+                        "6": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=50",
+                        "7": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=60",
+                        "8": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=70",
+                        "9": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=80",
+                        "10": "https://serpapi.com/search.json?device=desktop&engine=google&gl=us&google_domain=google.com&hl=en&q=Where+did+the+Absinthe+Frapp%C3%A9+cocktail+originate+from&start=90"
+                    }
+                }
+            }
+        }
+    ]
+}
