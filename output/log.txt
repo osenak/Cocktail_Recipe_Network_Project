@@ -1,1 +1,472 @@
-2025-04-02 16:03:48,492 - Processed 1 cocktails. Saved results to output11debug.4/cocktail_origins.csv
+
+>>> Searching for Abacaxi Ricaço...
+
+Searching: Where did the Abacaxi Ricaço cocktail originate from?
+
+Processing search result:  at https://en.wikipedia.org/wiki/cocktail#:~:text=dale%20degroff%20hypothesizes%20that%20the,corruption%20of%20%22cock%20ale%22.
+Found location postfix: which antoine a
+Geopy 1st-level error for which antoine a: 'address_components'
+Abacaxi Ricaço- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.gotrum.com/editorials/bartenders-corner/the-jungle-bird_1/
+Found location postfix: the kuala lumpur hilton
+Geopy 1st-level error for the kuala lumpur hilton: 'address_components'
+Geopy 2nd-level error for the kuala lumpur hilton: 'address_components'
+Abacaxi Ricaço- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.tastingtable.com/1517462/origin-new-orleans-hurricane-drink/
+Abacaxi Ricaço- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.bacardilimited.com/media/news-archive/the-cuba-libre-cocktail-originated-with-bacardi-rum-celebrates-112th-anniversary/#:~:text=while%20celebrating%20cuba's%20victory%20at,drinking%20this%20enticing%2c%20new%20combination.
+Abacaxi Ricaço- called extract_location_by_adj, result: Unknown, Unknown
+Found location: the american bar in havana
+
+Processing search result: difford's guide at https://www.diffordsguide.com/cocktails/recipe/1/abacaxi-ricaco
+Found nationality adjective 'brazilian' → Assigning country: Brazil
+
+Processing search result: wordpress.com at https://bartendingnotes.wordpress.com/tag/abacaxi-ricaco/
+Found nationality adjective 'brazilian' → Assigning country: Brazil
+Abacaxi Ricaço-wordpress.com called extract_location_by_adj, result: Unknown, Brazil
+
+Processing search result: difford's guide at https://www.diffordsguide.com/cocktails/recipe/3935/pepin-cocktail
+
+Processing search result: wordpress.com at https://bartendingnotes.wordpress.com/tag/pineapple/
+Found nationality adjective 'brazilian' → Assigning country: Brazil
+Abacaxi Ricaço-wordpress.com called extract_location_by_adj, result: Unknown, Brazil
+
+Processing search result: datawars at https://profiles.datawars.io/ebner07/projects/9a1cc325-31cc-4c48-b9b7-4c5a33b32dbf
+Found location postfix: the top of the pinea
+Geopy 1st-level error for the top of the pinea: 'address_components'
+Geopy 2nd-level error for the top of the pinea: 'address_components'
+Abacaxi Ricaço-datawars called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: hawaiian airlines at https://www.hawaiianairlines.com/hawaii-stories/food-and-entertainment/cocktails
+Abacaxi Ricaço-hawaiian airlines called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: youtube · mundo dos drinks at https://www.youtube.com/watch?v=o5gszr4ph4y
+Abacaxi Ricaço-youtube · mundo dos drinks called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: wikipedia at https://en.wikipedia.org/wiki/caipirinha
+Found location: of the drink is unknown
+Abacaxi Ricaço-wikipedia called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: square at https://developer.squareup.com/blog/how-to-train-your-own-genai-model/
+Abacaxi Ricaço-square called extract_location_by_adj, result: Unknown, Unknown
+Best effort origin selected by adjective for Abacaxi Ricaço: State: Unknown, Country: Brazil
+
+>>> Searching for Abbey...
+
+Searching: Where did the Abbey cocktail originate from?
+
+Processing search result:  at https://support.google.com/websearch?p=ai_overviews&hl=en
+Abbey- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://kitchenswagger.com/between-the-sheets-cocktail/
+Abbey- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at http://and1morefortheroad.blogspot.com/2012/12/winter-drinks-flip.html
+Found location postfix: colonial american taverns
+Geopy 1st-level error for colonial american taverns: 'address_components'
+Geopy 2nd-level error for colonial american taverns: 'address_components'
+Abbey- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://gingerhultinnutrition.com/easy-healthy-blood-mary-cocktails/
+Found location postfix: the st
+Abbey- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: tuxedono2.com at https://tuxedono2.com/the-abbey-cocktail-recipe
+Found location postfix: the iconic savoy cocktail book
+Geopy 1st-level error for the iconic savoy cocktail book: 'address_components'
+Geopy 2nd-level error for the iconic savoy cocktail book: 'address_components'
+Abbey-tuxedono2.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: the spruce eats at https://www.thespruceeats.com/abbey-cocktail-recipe-759566
+Found location postfix: martini with lillet blanc
+Geopy 1st-level error for martini with lillet blanc: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=martini&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+Abbey-the spruce eats called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: crimsoncocktail.com at https://crimsoncocktail.com/spirits-and-recipes/abbey-cocktail-recipe/
+Abbey-crimsoncocktail.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: wix.com at https://legitk.wixsite.com/bartendblog/single-post/2016/12/06/abbey-cocktail
+Found location postfix: some establishment on the actual abbey road
+Abbey-wix.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: novel nightcaps at https://novelnightcaps.com/recipe/the-abbey-cocktail/
+Abbey-novel nightcaps called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: reddit · r/cocktails at https://www.reddit.com/r/cocktails/comments/n9lfwb/abbey_cocktail_a_downtown_classic/
+Abbey-reddit · r/cocktails called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: cup of zest at https://www.cupofzest.com/the-abbey-cocktail/
+Abbey-cup of zest called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: cocktail mag at https://www.cocktailmag.fr/en/cocktail-recipe/gin/abbey
+Abbey-cocktail mag called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: crimsoncocktail.com at https://crimsoncocktail.com/es/general/abbey-cocktail-recipe/
+Abbey-crimsoncocktail.com called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
+
+>>> Searching for A.B.C. Cocktail...
+
+Searching: Where did the A.B.C. Cocktail cocktail originate from?
+
+Processing search result:  at https://en.wikipedia.org/wiki/cocktail#:~:text=dale%20degroff%20hypothesizes%20that%20the,corruption%20of%20%22cock%20ale%22.
+Found location postfix: which antoine a
+Geopy 1st-level error for which antoine a: 'address_components'
+A.B.C. Cocktail- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://eastdrops.com/blogs/learn/famous-cocktails
+A.B.C. Cocktail- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://craftybartending.com/cocktail-recipes/abc-shot/
+A.B.C. Cocktail- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.tastingtable.com/1517462/origin-new-orleans-hurricane-drink/
+A.B.C. Cocktail- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: difford's guide at https://www.diffordsguide.com/cocktails/recipe/4/abc-cocktail
+
+Processing search result: make me a cocktail at https://makemeacocktail.com/cocktail/625/abc
+A.B.C. Cocktail-make me a cocktail called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: wordpress.com at https://whatscookinvt.wordpress.com/2017/11/20/harrys-abc-mixing-cocktails/
+A.B.C. Cocktail-wordpress.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: spiritsandcocktails.community at https://spiritsandcocktails.community/t/harrys-abc-of-mixing-cocktails/459/4
+Found location postfix: the paris edition of the new york herald in september
+Geopy 1st-level error for the paris edition of the new york herald in september: 'address_components'
+Geopy 2nd-level error for the paris edition of the new york herald in september: 'address_components'
+A.B.C. Cocktail-spiritsandcocktails.community called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: youtube · belly up bar cocktails at https://www.youtube.com/watch?v=poeocfr1nhw
+A.B.C. Cocktail-youtube · belly up bar cocktails called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: island profiles at https://islandprofiles.com/what-about-the-liqueur-abc-cocktail
+A.B.C. Cocktail-island profiles called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: abc fine wine & spirits at https://abcfws.com/the-origin-of-the-daiquiri?srsltid=afmboooyzej039msydubx143nwgo-aobc39ouiax4z1kt7doqhiml09n
+A.B.C. Cocktail-abc fine wine & spirits called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: kindred cocktails at https://kindredcocktails.com/cocktail/abc-cocktail
+Found location postfix: that combines port and cognac with a delicate and fresh sense of mint leaves
+Geopy 1st-level error for that combines port and cognac with a delicate and fresh sense of mint leaves: 'address_components'
+A.B.C. Cocktail-kindred cocktails called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: wikipedia at https://en.wikipedia.org/wiki/boulevardier_(cocktail)
+A.B.C. Cocktail-wikipedia called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
+
+>>> Searching for Absinthe Cocktail...
+
+Searching: Where did the Absinthe Cocktail cocktail originate from?
+
+Processing search result:  at https://support.google.com/websearch?p=ai_overviews&hl=en
+Absinthe Cocktail- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.bbc.com/culture/article/20140109-absinthe-a-literary-muse#:~:text=contemporaries%20cited%20absinthe%20as%20shortening,us%20and%20most%20of%20europe.
+Found location postfix: france
+Geopy 1st-level error for france: 'address_components'
+Geopy 2nd-level error for france: 'address_components'
+Absinthe Cocktail- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.neworleans.com/drink/cocktails/absinthe-frappe/#:~:text=in%201912%2c%20absinthe%20was%20outlawed,to%20be%20dangerous%20after%20all.
+Found location postfix: the united states because its main ingredient
+Geopy 1st-level error for the united states because its main ingredient: 'address_components'
+Geopy 2nd-level error for the united states because its main ingredient: 'address_components'
+Absinthe Cocktail- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: food52 at https://food52.com/drinks/spirits-liquor/27829-the-history-of-absinthe?srsltid=afmboopirljeofepdqgq26m13f9rticdlwa-cp1ljbbkkgpa1dxktivr
+Absinthe Cocktail-food52 called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: revelry tours at https://revelry.tours/cocktails/absinthe/
+Absinthe Cocktail-revelry tours called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: science history institute at https://www.sciencehistory.org/stories/magazine/the-devil-in-a-little-green-bottle-a-history-of-absinthe/
+Absinthe Cocktail-science history institute called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: difford's guide at https://www.diffordsguide.com/g/1102/absinthe/origins-of-absinthe
+
+Processing search result: explore louisiana at https://www.explorelouisiana.com/articles/history-absinthe-new-orleans
+Absinthe Cocktail-explore louisiana called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: binwise at https://home.binwise.com/guides/absinthe-drinks-and-history
+Absinthe Cocktail-binwise called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: spirits of france at https://spiritsoffrance.com.au/blogs/news/the-green-fairy-a-history-of-absinthe?srsltid=afmbooplyas5yl4ggqazvcyyx0lek3zycv2pxg3mg85yxlu_kf1hfyav
+Found location postfix: the greek word
+Absinthe Cocktail-spirits of france called extract_location_by_adj, result: Unknown, Unknown
+Found location: switzerland
+
+Processing search result: food & wine at https://www.foodandwine.com/cocktails-spirits/what-is-absinthe
+Absinthe Cocktail-food & wine called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: bartender spirits awards at https://bartenderspiritsawards.com/en/blog/insights-1/the-green-fairy-absinthe-462.htm
+Found location postfix: addition
+Geopy 1st-level error for addition: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=addition&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+Geopy 2nd-level error for addition: 'address_components'
+Absinthe Cocktail-bartender spirits awards called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
+
+>>> Searching for Absinthe Frappé...
+
+Searching: Where did the Absinthe Frappé cocktail originate from?
+
+Processing search result:  at https://support.google.com/websearch?p=ai_overviews&hl=en
+Absinthe Frappé- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://mymelange.net/mymelange/2008/03/summoning-the-green-fairy.html
+Absinthe Frappé- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.webmd.com/diet/what-to-know-about-absinthe#:~:text=traditionally%2c%20absinthe%20is%20distilled%20from,of%2060%25%20to%2080%25.
+Absinthe Frappé- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: travel distilled at https://www.traveldistilled.com/absinthe-frappe-history/
+Absinthe Frappé-travel distilled called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: moody mixologist at https://www.moodymixologist.com/blog/absinthe-frappe
+Absinthe Frappé-moody mixologist called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: lsu press at https://lsupress.org/9780807179291/the-absinthe-frappe/
+Absinthe Frappé-lsu press called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: garden & gun at https://gardenandgun.com/recipe/killer-cocktail-the-absinthe-frappe/
+Absinthe Frappé-garden & gun called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: liquor.com at https://www.liquor.com/recipes/absinthe-frappe/
+Absinthe Frappé-liquor.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: out all day: new orleans at https://www.outalldaynola.com/absinthe-frappe-by-marielle-songy.html
+Absinthe Frappé-out all day: new orleans called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: tasteatlas at https://www.tasteatlas.com/absinthe-frappe
+Absinthe Frappé-tasteatlas called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: gastronom cocktails at https://www.gastronomblog.com/absinthe-frappe-recipe/
+Absinthe Frappé-gastronom cocktails called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: beyond bourbon street at https://beyondbourbonst.com/absinthe-frappe-episode-192/
+Found location postfix: new orleans
+Absinthe Frappé-beyond bourbon street called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
+
+>>> Searching for Absinthe Sour...
+
+Searching: Where did the Absinthe Sour cocktail originate from?
+
+Processing search result:  at https://theculinarychase.com/2022/03/new-york-sour-cocktail/
+Absinthe Sour- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://support.google.com/websearch?p=ai_overviews&hl=en
+Absinthe Sour- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://eightoaksdistillery.com/blog/the-whiskey-sour-history-of-a-classic-cocktail/#:~:text=where%20did%20the%20whiskey%20sour,sailors%20for%20this%20delicious%20cocktail.
+Absinthe Sour- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: sipsnibblesbites.com at https://www.sipsnibblesbites.com/absinthe-sour-cocktail/
+Absinthe Sour-sipsnibblesbites.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: foodiepilgrim.com at https://foodiepilgrim.com/content/absinthe-cocktail
+Absinthe Sour-foodiepilgrim.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: difford's guide at https://www.diffordsguide.com/g/1133/sour-cocktails/history
+Found location postfix: the mart
+Geopy 1st-level error for the mart: 'address_components'
+Geopy 2nd-level error for the mart: 'address_components'
+
+Processing search result: cocktail time with kevin kos at https://www.kevinkos.com/post/all-about-absinthe
+Found location postfix: kos
+Geopy 1st-level error for kos: 'address_components'
+Geopy 2nd-level error for kos: 'address_components'
+Absinthe Sour-cocktail time with kevin kos called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: reddit · r/cocktails at https://www.reddit.com/r/cocktails/comments/kpp2ty/absinthe_sour_the_best_absinthebased_cocktail_ive/
+Absinthe Sour-reddit · r/cocktails called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: cocktailflavors.com at https://cocktailflavors.com/absinthe-sour-cocktail-recipe/
+Found location postfix: europe
+Geopy 1st-level error for europe: 'address_components'
+Geopy 2nd-level error for europe: 'address_components'
+Absinthe Sour-cocktailflavors.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: food52 at https://food52.com/drinks/spirits-liquor/27829-the-history-of-absinthe?srsltid=afmboopccr1niga2yfhuzci91ptmhxunuqcqqebkrfmry4vehiowdxo5
+Absinthe Sour-food52 called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: the three drinkers at https://www.thethreedrinkers.com/magazine-content/tag/the+history+of+absinthe
+Absinthe Sour-the three drinkers called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: absinthe original at https://www.originalabsinthe.com/absinthe-blog/facts-about-green-fairy-absinthe.html
+Found location postfix: switzerland
+Absinthe Sour-absinthe original called extract_location_by_adj, result: Unknown, Unknown
+Found location: popularizing and commercializing the drink to the world
+
+Processing search result: bbc at https://www.bbc.com/culture/article/20140109-absinthe-a-literary-muse
+Absinthe Sour-bbc called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
+
+>>> Searching for Absinthe Suisesse...
+
+Searching: Where did the Absinthe Suisesse cocktail originate from?
+
+Processing search result:  at https://www.helvetickitchen.com/recipes/2017/6/30/suissesse#:~:text=like%20many%20classic%20absinthe%20cocktails,the%20green%20fairy%e2%80%94the%20sazerac.
+Found location postfix: new orleans
+Absinthe Suisesse- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://en.wikipedia.org/wiki/absinthe#:~:text=absinthe%20was%20created%20in%20the,among%20parisian%20artists%20and%20writers.
+Absinthe Suisesse- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.thespruceeats.com/how-to-drink-absinthe-759547#:~:text=the%20french%20absinthe%20ritual&text=pour%20about%201%20ounce%20of,sugar%20cube%20begins%20to%20dissolve.
+Absinthe Suisesse- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.webmd.com/diet/what-to-know-about-absinthe#:~:text=traditionally%2c%20absinthe%20is%20distilled%20from,of%2060%25%20to%2080%25.
+Absinthe Suisesse- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: punchdrink.com at https://punchdrink.com/articles/absinthe-suissesse-cocktail-new-orleans/
+Found location postfix: europe and in northern u
+Geopy 1st-level error for europe and in northern u: 'address_components'
+Geopy 2nd-level error for europe and in northern u: 'address_components'
+Absinthe Suisesse-punchdrink.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: liquor.com at https://www.liquor.com/absinthe-suissesse-cocktail-recipe-5212145
+Found location postfix: absinthe production
+Geopy 1st-level error for absinthe production: 'address_components'
+Absinthe Suisesse-liquor.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: facebook · the perfect spot at https://www.facebook.com/theperfectspot/posts/my-long-beloved-absinthe-suissesse-cocktail-may-have-been-invented-in-my-also-lo/1089322002986408/
+Absinthe Suisesse-facebook · the perfect spot called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: phoenix new times at https://www.phoenixnewtimes.com/restaurants/how-to-make-an-absinthe-suissesse-the-perfect-brunch-cocktail-6514543
+Absinthe Suisesse-phoenix new times called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: spiritsandcocktails.community at https://spiritsandcocktails.community/t/absinthe-suissesse/482
+Absinthe Suisesse-spiritsandcocktails.community called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: tuxedono2.com at https://tuxedono2.com/suissesse-cocktail-recipe
+Found location postfix: their eponymous drinks manual
+Geopy 1st-level error for their eponymous drinks manual: 'address_components'
+Absinthe Suisesse-tuxedono2.com called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: facebook · the perfect spot at https://m.facebook.com/theperfectspot/photos/my-long-beloved-absinthe-suissesse-cocktail-may-have-been-invented-in-my-also-lo/1089320912986517/
+Absinthe Suisesse-facebook · the perfect spot called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
+
+>>> Searching for Absinthe Without Leave...
+
+Searching: Where did the Absinthe Without Leave cocktail originate from?
+
+Processing search result:  at https://support.google.com/websearch?p=ai_overviews&hl=en
+Absinthe Without Leave- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.neworleans.com/drink/cocktails/absinthe-frappe/#:~:text=in%201912%2c%20absinthe%20was%20outlawed,to%20be%20dangerous%20after%20all.
+Found location postfix: the united states because its main ingredient
+Geopy 1st-level error for the united states because its main ingredient: 'address_components'
+Geopy 2nd-level error for the united states because its main ingredient: 'address_components'
+Absinthe Without Leave- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.bbc.com/culture/article/20140109-absinthe-a-literary-muse#:~:text=contemporaries%20cited%20absinthe%20as%20shortening,us%20and%20most%20of%20europe.
+Found location postfix: france
+Geopy 1st-level error for france: 'address_components'
+Geopy 2nd-level error for france: 'address_components'
+Absinthe Without Leave- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.originalabsinthe.com/absinthe-blog/facts-about-green-fairy-absinthe.html#:~:text=the%20mythical%20correlation%20to%20absinthe,hallucinogenic%20properties%20became%20very%20famous.
+Absinthe Without Leave- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: wikipedia at https://en.wikipedia.org/wiki/absinthe
+Absinthe Without Leave-wikipedia called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: food52 at https://food52.com/drinks/spirits-liquor/27829-the-history-of-absinthe?srsltid=afmbooq9azase3ispwtx2n9gf66mb5tuyvhxuvxqoljkjzhlkqn3x6ue
+Absinthe Without Leave-food52 called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: revelry tours at https://revelry.tours/cocktails/absinthe/
+Absinthe Without Leave-revelry tours called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: cocktail time with kevin kos at https://www.kevinkos.com/post/all-about-absinthe
+Found location postfix: kos
+Geopy 1st-level error for kos: 'address_components'
+Geopy 2nd-level error for kos: 'address_components'
+Absinthe Without Leave-cocktail time with kevin kos called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: eyguebelle at https://www.eyguebelle.com/en/blog/blog-posts/absinthe-the-incredible-story-of-the-crazy-green-fairy
+Found location postfix: pontarlier
+Geopy 1st-level error for pontarlier: 'address_components'
+Geopy 2nd-level error for pontarlier: 'address_components'
+Absinthe Without Leave-eyguebelle called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: difford's guide at https://www.diffordsguide.com/g/1102/absinthe/origins-of-absinthe
+
+Processing search result: reddit · r/askreddit at https://www.reddit.com/r/askreddit/comments/c29yu/lets_talk_about_absinthe_whos_had_it_how_do_you/
+Absinthe Without Leave-reddit · r/askreddit called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: explore louisiana at https://www.explorelouisiana.com/articles/history-absinthe-new-orleans
+Found location postfix: new orleans
+Geopy 1st-level error for new orleans: 'address_components'
+Geopy 2nd-level error for new orleans: 'address_components'
+Absinthe Without Leave-explore louisiana called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: squirrelfarts.com at https://www.squirrelfarts.com/2013/01/02/absinthe-the-history-stuff/
+Found location postfix: europe
+Geopy 1st-level error for europe: 'address_components'
+Geopy 2nd-level error for europe: 'address_components'
+Absinthe Without Leave-squirrelfarts.com called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
+
+>>> Searching for Absolutely Fabulous...
+
+Searching: Where did the Absolutely Fabulous cocktail originate from?
+
+Processing search result:  at https://en.wikipedia.org/wiki/cocktail#:~:text=dale%20degroff%20hypothesizes%20that%20the,corruption%20of%20%22cock%20ale%22.
+Found location postfix: which antoine a
+Geopy 1st-level error for which antoine a: 'address_components'
+Absolutely Fabulous- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://absolutelyfabulous.fandom.com/wiki/user_blog:ozrunnergrrrl/what_are_they_drinking%3f#:~:text=in%20the%20early%20series%20of,had%20to%20remodel%20the%20kitchen.
+Found location postfix: the early series of ab fab the ladies started out imbibing red wine
+Geopy 1st-level error for the early series of ab fab the ladies started out imbibing red wine: 'address_components'
+Geopy 2nd-level error for the early series of ab fab the ladies started out imbibing red wine: 'address_components'
+Absolutely Fabulous- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result:  at https://www.facebook.com/visitlubbock/posts/did-you-know-the-chilton-drink-was-created-in-lubbock-years-ago-dr-chilton-wante/10153139270020777/
+Absolutely Fabulous- called extract_location_by_adj, result: Unknown, Unknown
+Found location: the lubbock country club
+
+Processing search result:  at https://www.reddit.com/r/tiki/comments/1f0dxrx/original_bahama_mama/
+Absolutely Fabulous- called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: fandom at https://absolutelyfabulous.fandom.com/wiki/user_blog:ozrunnergrrrl/what_are_they_drinking%3f
+Found location postfix: the early series of ab fab the ladies started out imbibing red wine
+Geopy 1st-level error for the early series of ab fab the ladies started out imbibing red wine: 'address_components'
+Geopy 2nd-level error for the early series of ab fab the ladies started out imbibing red wine: 'address_components'
+Absolutely Fabulous-fandom called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: purewow at https://www.purewow.com/food/absolutely-fabulous-cocktail-recipe
+Absolutely Fabulous-purewow called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: wikipedia at https://en.wikipedia.org/wiki/absolutely_fabulous
+Absolutely Fabulous-wikipedia called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: fandom at https://www.fandom.com/articles/absolutely-fabulous-movie-five-champagne-cocktails-to-celebrate
+Found location postfix: other words
+Geopy 1st-level error for other words: 'address_components'
+Geopy 2nd-level error for other words: 'address_components'
+Absolutely Fabulous-fandom called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: henry's world of booze at https://worldofbooze.wordpress.com/2016/07/07/these-wines-are-absolutely-fabulous/
+Absolutely Fabulous-henry's world of booze called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: yahoo at https://www.yahoo.com/lifestyle/absolutely-fabulous-cocktail-inspired-ab-091200318.html
+Absolutely Fabulous-yahoo called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: empire wine & liquor at https://www.empirewine.com/recipes/vodka/absolutely-fabulous-39/?srsltid=afmbooobjrfrmxkyenbqysvhgknzabu3ufany55birsakticm6nr0mwe
+Absolutely Fabulous-empire wine & liquor called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: kleos mastiha spirit at https://drinkkleos.com/mastiha-cocktails/absolutely-fabulous/
+Found location postfix: history to found a spirits brand
+Geopy 1st-level error for history to found a spirits brand: 'address_components'
+Geopy 2nd-level error for history to found a spirits brand: HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Max retries exceeded with url: /search?q=history+to&format=json&limit=1 (Caused by ReadTimeoutError("HTTPSConnectionPool(host='nominatim.openstreetmap.org', port=443): Read timed out. (read timeout=1)"))
+Absolutely Fabulous-kleos mastiha spirit called extract_location_by_adj, result: Unknown, Unknown
+
+Processing search result: spiritly uk at https://spiritly.com/blogs/cocktails/absolutely-fabulous
+Absolutely Fabulous-spiritly uk called extract_location_by_adj, result: Unknown, Unknown
+No origin location found
