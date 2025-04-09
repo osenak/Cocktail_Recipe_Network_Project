@@ -1,6 +1,6 @@
 # Cocktail_Recipe_Network_Project
 
-Masterfile for all relevants scripts and datasets used in project.
+Masterfile of all relevants scripts and datasets used in project.
 
 `output` folder keeps logs from previous querying to check correctness.
 
