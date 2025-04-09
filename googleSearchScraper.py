@@ -12,7 +12,7 @@ import sys
 import time
 import unicodedata
 
-# ChatGPT generated: Class to duplicate output (except tqdm)
+# ChatGPT geenrated: Class to duplicate output (except tqdm) for debugging purposes
 class TeeLogger:
     def __init__(self, terminal, file):
         self.terminal = terminal  # Original stdout
@@ -27,7 +27,7 @@ class TeeLogger:
         self.file.flush()
 
 
-# ChatGPT generated: Mapping of nationality adjectives to corresponding countries
+# ChatGPT expanded: Mapping of nationality adjectives to corresponding countries
 nationality_to_country = {
     # Continental adj for later inspection (dont want to miss them)
     "european": "Europe", "asian": "Asia", "african": "Africa", "north american": "North America", "south american": "South American",
@@ -49,7 +49,7 @@ nationality_to_country = {
 }
 
 
-# ChatGPT generated: Mapping of nationality adjectives to corresponding states, provinces, and cities
+# ChatGPT expanded: Mapping of nationality adjectives to corresponding states, provinces, and cities
 known_origins = {
     "The Savoy Cocktail Book": "London",
     "Jerry Thomas' Bartender's Guide": "New York",
@@ -71,7 +71,7 @@ known_origins = {
 }
 
 
-# ChatGPT generated: Mapping of nationality adjectives to corresponding states, provinces, and cities
+# ChatGPT expanded: Mapping of nationality adjectives to corresponding states, provinces, and cities
 nationality_to_region = {
     # 🇧🇷 Brazil
     "paulista": "São Paulo", "carioca": "Rio de Janeiro", "baiano": "Bahia",
@@ -183,7 +183,7 @@ nationality_to_region = {
     "aucklander": "Auckland", "wellingtonian": "Wellington"
 }
 
-# ChatGPT generated: Check for location keywords ("from" or similar)
+# ChatGPT expanded: Check for location keyword ("from" or similar)
 origin_keywords = [
     "origin", "origins", "originated", "originating", "invented", "first made", "created",
     "inception", "first developed", "concocted", "first crafted", "first served", "first mixed",
@@ -192,6 +192,7 @@ origin_keywords = [
     "popularizing", "devising", "devised", "formulated", "crafted", "established", "history", "first distilled",
     "first prepared", "first sold", "manufactured", "product", "produced", "pioneered", "credited"
 ]
+# ChatGPT expanded:
 prepositions_list = [
     # Specific place types
     "hotel in", "club in", "cafe in", "bar in", "lounge in", "tavern in", "saloon in",
@@ -228,14 +229,14 @@ nlp = spacy.load("en_core_web_sm")
 # Initialize geolocator
 geolocator = Nominatim(user_agent="cocktail_origin_lookup")
 
-# Your SerpAPI Key - MAKE SURE TO MODIFY THIS EVERY TIME
+# SerpAPI Key
 SERPAPI_KEY = "..."
 
 # Define output directory
-output_dir = "output"
+output_dir = "Corrected_OriginFinderV13Results"
 os.makedirs(output_dir, exist_ok=True)
 
-# Open log file in append mode
+# Open log file in append mode for logging outputs and errors
 log_file_path = os.path.join(output_dir, "output_log.txt")
 log_file = open(log_file_path, "a") # Open log file in append mode
 
@@ -252,7 +253,11 @@ search_api_queries_file = os.path.join(output_dir, "searchAPIQueries.json")
 # Initialize an empty list to store search queries and results
 search_queries = {}
 
-# ChatGPT generated: Function to normalize cocktail name
+""" Original version of function for normalizing names
+
+    Takes a name to normalize and returns a normalized version of the name
+    e.g. Abacaxi RicaÃ§o -> abacaxi ricaco
+"""
 def normalize_name(name):
     """Removes special characters, trims spaces, and removes 'cocktail' from the end."""
     # Remove text after '(' if present
@@ -270,7 +275,55 @@ def normalize_name(name):
     name = re.sub(r'\s+cocktail$', '', name, flags=re.IGNORECASE)  # Remove 'cocktail'
     return name.lower().strip()
 
+""" Latest version of function for normalizing names
+    Takes a name to normalize and returns a set of varying versions of normalized names by removing
+    special characters, trimming spaces, removing 'cocktail' from the end, etc.
+    e.g. Abacaxi's RicaÃ§o No.1 (Miley's version)
+        -> [Abacaxi's RicaÃ§o No.1, abacaxi's ricaÃ§o no.1, abacaxi's ricaÃ§o no 1, abacaxis ricaco no1, etc..]
+"""
+def normalize_names(name):
+    names = set()
+    # Remove text after '(' if present
+    name = re.split(r'\(', name)[0]
+    names.add(name.lower().strip())
+    # Replace specific characters
+    name = name.replace('&', 'and')
+    names.add(name.lower().strip())
+    name = name.replace('\\', 'or')
+    names.add(name.lower().strip())
+    name_no = re.sub(r' no\.\b', ' no', name, flags=re.IGNORECASE)
+    names.add(name_no.lower().strip())
+    name = re.sub(r' no\.\b', ' no ', name, flags=re.IGNORECASE)
+    names.add(name.lower().strip())
 
+    # Normalize accented characters to their decomposed form
+    name = unicodedata.normalize('NFD', name)
+    names.add(name.lower().strip())
+    name = ''.join([c for c in name if not unicodedata.combining(c)])  # Remove the combining characters
+    names.add(name.lower().strip())
+    
+    name = re.sub(r'[^a-zA-Z0-9\s]', '', name)  # Remove special characters
+    names.add(name.lower().strip())
+    name = re.sub(r'\s+cocktail$', '', name, flags=re.IGNORECASE)  # Remove 'cocktail'
+    names.add(name.lower().strip())
+    
+    # If the name starts with 'the ', remove 'the ' from the beginning
+    if name.lower().startswith("the "):
+        name = name[4:]  # Remove the first 4 characters ("the ")
+        names.add(name.lower().strip())
+
+    # Replace all occurrences of ' the ' with a space
+    name = name.replace(" the ", " ")
+    names.add(name.lower().strip())
+
+    # If has of
+    name = name.replace(" of ", " ")
+    names.add(name.lower().strip())
+    return names
+
+"""
+    Checks if json object has a rating field and adds it to a list to be processed later
+"""
 def check_for_rating(result, ratings_list):
     # Check if 'rich_snippet' and 'top' exist in the result
     rich_snippet = result.get("rich_snippet", {})
@@ -284,7 +337,9 @@ def check_for_rating(result, ratings_list):
         source = result.get("source", "Unknown").strip()
         ratings_list.append((source, rating))
 
-
+"""
+    Checks if json object has a minutes field and adds it to a list to be processed later
+"""
 def check_for_time(result, recipe_time_list):
     # Check if 'rich_snippet' and 'top' exist in the result
     rich_snippet = result.get("rich_snippet", {})
@@ -298,26 +353,15 @@ def check_for_time(result, recipe_time_list):
         source = result.get("source", "Unknown").strip()
         recipe_time_list.append((source, time))
 
-# def is_postal_code(value):
-#     postal_code_patterns = [
-#         r"^\d{5,7}$",                      # Purely numeric (USA, India, etc.)
-#         r"^\d{5}-\d{4}$",                  # ZIP+4 (USA)
-#         r"^[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d$",  # Canada (e.g., K1A 0B1)
-#         r"^[A-Za-z]{1,2}\d[A-Za-z\d]?\s?\d[A-Za-z]{2}$",  # UK
-#     ]
-#     for pattern in postal_code_patterns:
-#         if re.match(pattern, value):
-#             return True
-#     return False
-
-# Function to resolve location with Geopy
+"""
+    Function that uses Geopy to resolve a string to a location identifying a state and country.
+"""
 def resolve_location(location):
-    """Uses Geopy to resolve the location to a state and country."""
     try:
 
         location_obj = geolocator.geocode(location, exactly_one=True, timeout=10, language="en")
         if location_obj:
-            print(f"Full Address: {location_obj.address}")  # Debugging info
+            print(f"Full Address: {location_obj.address}")
             # Split address by commas and strip spaces
             address_parts = [part.strip() for part in location_obj.address.split(",")]
 
@@ -333,7 +377,7 @@ def resolve_location(location):
             if len(address_parts) >= 1:
                 country = address_parts[-1]
 
-            print(f"Resolved location: State: {state}, Country: {country}")  # Debugging info
+            print(f"Resolved location: State: {state}, Country: {country}")
             return state, country
         else:
             return "Unknown", "Unknown"
@@ -344,9 +388,11 @@ def resolve_location(location):
         print(f"Geopy error for {location}: {e}")
         return "Unknown", "Unknown"
 
-
+"""
+    Uses the nationality/regionality adjectives defined above to identify a location
+"""
 def extract_location_by_adj(allFieldsData):
-    # Convert to lowercase for easier searching (but keep original for regex)
+    # Convert to lowercase for easier searching
     allFieldsDataLower = allFieldsData.lower()
     locations_found = []
 
@@ -358,7 +404,7 @@ def extract_location_by_adj(allFieldsData):
             location = resolve_location(state)
             locations_found.append(location)
 
-    # Check for nationality adjectives (e.g., "Brazilian", "Mexican")
+    # Check for nationality adjectives e.g. Brazilian, Mexican
     for adj, country in nationality_to_country.items():
         # if any(f"{adj} {word}" in allFieldsData for word in ["cocktail", "drink", "concoction", "beverage", "bar", "club", "restaurant", "cafe", "establishment", "bartender"]):
         if adj in allFieldsDataLower:
@@ -378,14 +424,13 @@ def extract_location_by_keyword(allFieldsData):
     # Create regex pattern for all prepositions
     preposition_pattern = "|".join(re.escape(p) for p in prepositions_list)
 
-    # Regex: find any capitalized phrase that comes after a listed preposition
-    # This allows multiple capitalized tokens (e.g., "New Orleans", "San Francisco")
+    # ChatGPT assisted Regex pattern: find any capitalized phrase that comes after a listed preposition
     capitalized_after_prep_pattern = rf"(?:\b(?:{preposition_pattern})\b\s+)((?:[A-Z][a-zA-Z'-]*\s*)+)(?=[\.\?!]|$)"
 
     # Find all matches in the full text, allows for duplicates by keyword for increased chances
     matches = re.findall(capitalized_after_prep_pattern, allFieldsData)
 
-    # Deduplicate and filter
+    # Parse text
     for match in matches:
         location = match.strip()
         # Remove possessive suffix if present
@@ -421,6 +466,7 @@ def extract_location_by_keyword(allFieldsData):
                 # to not risk geopy resolving weird locations
                 continue
 
+        # Check if capitalized phrases might be a book reference and in known_origins
         for source, origin in known_origins.items():
             if source == location:
                 state = origin
@@ -432,12 +478,14 @@ def extract_location_by_keyword(allFieldsData):
 
     return locations_found
 
-
+"""
+    Adds a possible location to a list with a specified 'priority' (likelihood of being ideal answer) for later processing
+"""
 def add_to_pool(location, other_locations_found, priority_scale):
     
     state, country = location
     if state != "Unknown":
-        #if best_effort_origin_by_prefix == ("", "") or best_effort_origin_by_prefix[0] == "Unknown":
+        
         if not any(s == state for _, s, _ in other_locations_found): # if state not in pool yet
             if not any(c == country for _, c, _ in other_locations_found): # if country not in pool yet
                 other_locations_found.append((state, country, priority_scale))
@@ -465,6 +513,10 @@ def add_to_pool(location, other_locations_found, priority_scale):
                     other_locations_found[i] = (s, c, count + priority_scale) # add a count to every state-country values
     print(f"Locations found at this point: {other_locations_found}")
 
+"""
+    Processes the pool of possible locations and determines the best state origin location by the highest priority number.
+    Returns a state-country pair.
+"""
 def get_best_state_from_pool(country, other_locations_found):
     
     if any(c == country for _, c, _ in other_locations_found):
@@ -484,15 +536,18 @@ def get_best_state_from_pool(country, other_locations_found):
     else: # if country not in pool
         return "Unknown", country
 
-# Function to fetch search results from Google using SerpAPI
+"""
+    Function to fetch search results from Google using SerpAPI.
+    Main caller of all subprocesses for datat processing.
+"""
 def search_google(title):
     
     # reset list to store ratings
     ratings_list = []
     recipe_time_list = []
-    title_normalized = normalize_name(title)
     
-    query = f"Where did the {title_normalized} cocktail originate from?"
+    # Setup scene for API
+    query = f"Where did the {title} cocktail originate from?"
     print(f"\nSearching: {query}")
 
     url = "https://serpapi.com/search"
@@ -519,6 +574,13 @@ def search_google(title):
         results = []
         seen_links = set()
 
+        answer_box = data.get("answer_box", [])
+        if answer_box:
+            answer_link = answer_box.get("link", "").lower()
+            if answer_link not in seen_links:
+                results.append(answer_box)  # Add answer_box to results
+                seen_links.add(answer_link)  # Mark this link as processed
+
         # Add related_questions first, if available, checking for duplicates
         related_questions = data.get("related_questions", [])
         for question in related_questions:
@@ -541,32 +603,49 @@ def search_google(title):
         for result in results:
             source = result.get("source", "").lower()
             link = result.get("link", "").lower()
-            #print(f"------------Title: {title}, Source: {source}")
             print(f"\n------------- Processing search result: {source} at {link}")
-            
-            check_for_rating(result, ratings_list)
-            
-            check_for_time(result, recipe_time_list)
 
-            """Extracts location from all fields in the search result."""
+            titles_normalized = normalize_names(title)
+
+            # Extracts location from all fields in the search result.
             allFieldsData = f"{result.get('title', '')} {result.get('snippet', '')} {result.get('snippet_highlighted_words', '')}"
             allFieldsDataLower = allFieldsData.lower()
             
-            # Skip this result if neither "title" nor "title_normalized" exists in any field
-            if title.lower() not in allFieldsDataLower and title_normalized.lower() not in allFieldsDataLower:
-              print(f"Skipped: No mention of {title} nor {title_normalized} in text.")
-              continue  # Skip this result and move to the next one
+            # Skip this result if neither "title" nor any of the normalized names exists in any field
+            if title.lower() not in allFieldsDataLower and not any(item.lower() in allFieldsDataLower for item in titles_normalized):
+                print(f"Skipped: No mention of {title} nor {titles_normalized} in text.") # for logging
+                continue  # Skip this result and move to the next one
+            
+            check_for_rating(result, ratings_list)
+            check_for_time(result, recipe_time_list)
             
             found_keywords = [keyword for keyword in origin_keywords if keyword in allFieldsDataLower]
             print(f"Found keywords {found_keywords}")
 
-            if result.get("source") == "Difford's Guide":
+            if result.get("type") == "organic_result":  # if processing result from answer_box
+                # If keyword in fields
+                if found_keywords:
+                    locations_found = extract_location_by_keyword(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found location by Google answer keyword {found_keywords}: {p}")
+                        add_to_pool(p, other_locations_found, 5)
+                else: # if keyword not in fields, do best effort
+                    locations_found = extract_location_by_adj(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found location by Google answer adjective: {p}")
+                        add_to_pool(p, other_locations_found, 4)
+
+                    locations_found = extract_location_by_keyword(allFieldsData)
+                    for p in locations_found:
+                        print(f"Found location by Google answer by preposition: {p}")
+                        add_to_pool(p, other_locations_found, 4)
+            elif result.get("source") == "Difford's Guide":
                 if found_keywords:
                     locations_found = extract_location_by_keyword(allFieldsData)
                     for p in locations_found:
                         print(f"Found Difford location by keyword {found_keywords}: {p}")
                         add_to_pool(p, other_locations_found, 4)
-                else:
+                else: # if keyword not in fields, do best effort
                     locations_found = extract_location_by_adj(allFieldsData)
                     for p in locations_found:
                         print(f"Found Difford location by adjective: {p}")
@@ -582,7 +661,7 @@ def search_google(title):
                     for p in locations_found:
                         print(f"Found Wikipedia location by keyword {found_keywords}: {p}")
                         add_to_pool(p, other_locations_found, 3)
-                else:
+                else: # if keyword not in fields, do best effort
                     locations_found = extract_location_by_adj(allFieldsData)
                     for p in locations_found:
                         print(f"Found Wikipedia location by adjective: {p}")
@@ -599,7 +678,7 @@ def search_google(title):
                     for p in locations_found:
                         print(f"Found general location by keyword {found_keywords}: {p}")
                         add_to_pool(p, other_locations_found, 2)
-                else:
+                else: # if keyword not in fields, do best effort
                     locations_found = extract_location_by_adj(allFieldsData)
                     for p in locations_found:
                         print(f"Found general location by adjective: {p}")
@@ -610,6 +689,7 @@ def search_google(title):
                         print(f"Found general location by preposition: {p}")
                         add_to_pool(p, other_locations_found, 1)
 
+        # If at least one location is found, poll all resolved locations and return best result
         if other_locations_found:
             best_origin_match = ("Unknown", "Unknown")
             next_best_origin_match = ("Unknown", "Unknown")
@@ -624,7 +704,7 @@ def search_google(title):
                 best_origin_match = next_best_origin_match
             print(f"Best effort origin selected by polling for {title}: State: {best_origin_match[0]}, Country: {best_origin_match[1]}\n")
             return best_origin_match, ratings_list, recipe_time_list
-      
+        # Else, return Unknown origins
         print("No origin location found.\n")
         return ("Unknown", "Unknown"), ratings_list, recipe_time_list
 
@@ -640,10 +720,10 @@ def get_cocktail_info(title):
     return origin
 
 # Load the CSV file
-csv_file = "cocktails_recipe_CLEAN.csv"
+csv_file = "cocktail_additional_info.csv"
 df = pd.read_csv(csv_file)
 
-# Ensure columns for Origin State, Origin Country, and Rating are created
+# Ensure columns for Origin State, Origin Country, and all others are created
 df["Origin State"] = ""
 df["Origin Country"] = ""
 df["Interest Rating"] = ""
@@ -660,6 +740,10 @@ for idx, title in tqdm(
     file=sys.__stderr__,  # Ensure tqdm writes to the original stderr
 ):
     try:
+        search_name_used = normalize_name(title)
+
+        if title.lower() == search_name_used:
+            continue 
         print(f"\n>>>>>>>>>>>>>>>>>>>>>>>>>>> Searching for {title} <<<<<<<<<<<<<<<<<<<<<<<<<<<")
         (state, country), ratings_list, recipe_time_list = get_cocktail_info(title)
 
